@@ -1,0 +1,22 @@
+{
+  "name": "pymba86/miac-lib",
+  "description": "Интеграция с МИАЦ",
+  "keywords": ["miac", "library"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Artem Matveychuk",
+      "email": "pymba-96@mail.ru"
+    }
+  ],
+  "minimum-stability": "stable",
+  "type": "library",
+  "require": {
+    "php": ">=7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "PyMba86\\Miac\\": "src/"
+    }
+  }
+}
