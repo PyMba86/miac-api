@@ -1,0 +1,19 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:por="http://www.hostco.ru/portal"
+                  xmlns:typ="http://www.hostco.ru/portal/types"
+                  xmlns:typ1="http://www.hostco.ru/types">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <por:getSlotListByPeriodRequest>
+            <typ:muCode>998</typ:muCode>
+            <typ:depCode>50</typ:depCode>
+            <typ:snils>16067057157</typ:snils>
+            <typ:profCode>16067057157</typ:profCode>
+            <typ:positionCode>74</typ:positionCode>
+            <typ:period>
+                <typ1:beginDate>2019-03-14</typ1:beginDate>
+                <typ1:endDate>2019-04-03</typ1:endDate>
+            </typ:period>
+        </por:getSlotListByPeriodRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

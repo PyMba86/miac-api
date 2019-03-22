@@ -12,5 +12,5 @@
 
 Установка:
 ```bash
-$ composer require "pymba86/miac-lib"
+$ composer require "pymba86/miac-api"
 ```

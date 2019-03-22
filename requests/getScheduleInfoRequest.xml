@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:por="http://www.hostco.ru/portal"
+                  xmlns:typ="http://www.hostco.ru/types">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <por:getScheduleInfoRequest>
+            <typ:scheduleDate>2019-04-01</typ:scheduleDate>
+            <typ:muCode>998</typ:muCode>
+            <typ:needFIO>true</typ:needFIO>
+        </por:getScheduleInfoRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

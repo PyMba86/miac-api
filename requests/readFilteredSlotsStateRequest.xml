@@ -1,0 +1,29 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.hostco.ru/portal" xmlns:typ="http://www.hostco.ru/types">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <por:readFilteredSlotsStateRequest>
+            <typ:scheduleDate>2019-04-01</typ:scheduleDate>
+            <typ:muCode>998</typ:muCode>
+            <!--Optional:-->
+            <typ:deptCode>50</typ:deptCode>
+            <!--Optional:-->
+            <typ:roomNumber>1</typ:roomNumber>
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <!--Optional:-->
+            <typ:docCode>16067057157</typ:docCode>
+            <!--Optional:-->
+            <typ:specCode>27</typ:specCode>
+            <!--Optional:-->
+            <typ:positionCode>74</typ:positionCode>
+            <!--Optional:-->
+            <!--Optional:-->
+            <typ:scheduleInfo>50_1</typ:scheduleInfo>
+            <!--Optional:-->
+            <typ:docFIO>Колташева Александра Сергеевна</typ:docFIO>
+            <!--Optional:-->
+            <typ:docSNILS>16067057157</typ:docSNILS>
+            <!--Optional:-->
+            <typ:needFIO>true</typ:needFIO>
+        </por:readFilteredSlotsStateRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

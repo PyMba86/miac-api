@@ -1,0 +1,11 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.hostco.ru/portal" xmlns:typ="http://www.hostco.ru/portal/types">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <por:findDistrictRequest>
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <typ:kladrCode>8600001000000</typ:kladrCode>
+            <typ:street>УЛ. ИВАНА ЗАХАРОВА</typ:street>
+            <typ:houseNumer>23</typ:houseNumer>
+        </por:findDistrictRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

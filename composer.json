@@ -1,5 +1,5 @@
 {
-  "name": "pymba86/miac-lib",
+  "name": "pymba86/miac-api",
   "description": "Интеграция с МИАЦ",
   "keywords": ["miac", "library"],
   "license": "MIT",
@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "PyMba86\\Miac\\": "src/"
+      "Miac\\": "src/"
     }
   }
 }
