@@ -5,7 +5,7 @@ namespace Miac\Client\Params;
 use Miac\Client\SoapClient;
 
 /**
- * SessionHandlerParams содержит все паматеры при установке обработчика сессии
+ * SessionHandlerParams содержит все параметры при установке обработчика сессии
  * @package Miac\Client\Params
  */
 class SessionHandlerParams

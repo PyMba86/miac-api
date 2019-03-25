@@ -61,16 +61,4 @@ class Client extends SoapClient
         return $this;
     }
 
-    /**
-     * Вызов сообщения с передачей параметров
-     * @param string $messageName
-     * @param array $options
-     * @param array $messageOptions
-     * @param bool $endSession
-     * @return mixed
-     */
-    public function callMessage(string $messageName,array $options, array $messageOptions, $endSession = false): void
-    {
-        return call_user_func([$this, $function], $params);
-    }
 }
