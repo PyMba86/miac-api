@@ -35,14 +35,4 @@ class SendResult
      * @var \Exception
      */
     public $exception;
-
-    /**
-     * SendResult constructor.
-     *
-     * @param string|float|null $messageVersion
-     */
-    public function __construct($messageVersion = null)
-    {
-        $this->messageVersion = $messageVersion;
-    }
 }

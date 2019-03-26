@@ -2,8 +2,8 @@
 
 namespace Miac\Client\Session\Handler;
 
+use Miac\Client\Message\BaseWsMessage;
 use Miac\Client\Params\SessionHandlerParams;
-use Miac\Struct\BaseWsMessage;
 
 /**
  * Интерфейс обработчика сессии

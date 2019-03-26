@@ -1,6 +1,6 @@
 <?php
 
-namespace Miac\Struct;
+namespace Miac\Client\Message;
 
 /**
  * WsMessageUtility - предоставляет служебные функции при построении сообщений веб-службы

@@ -1,6 +1,6 @@
 <?php
 
-namespace Miac\Struct;
+namespace Miac\Client\Message;
 
 /**
  * BaseWsMessage
