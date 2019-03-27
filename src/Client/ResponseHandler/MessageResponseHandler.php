@@ -2,8 +2,8 @@
 
 namespace Miac\Client\ResponseHandler;
 
-
 use Miac\Client\Exception;
+use Miac\Client\Result;
 use Miac\Client\Session\Handler\SendResult;
 
 /**
@@ -19,7 +19,7 @@ interface MessageResponseHandler
      * Анализирует результат операции с сообщением и проверяет наличие ошибок
      * @param SendResult $response
      * @throws Exception
-     * @return mixed
+     * @return Result
      */
     public function analyze(SendResult $response);
 }

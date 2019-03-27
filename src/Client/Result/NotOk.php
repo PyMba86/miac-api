@@ -20,7 +20,7 @@ class NotOk
      * @param string $text
      * @param string $level
      */
-    public function __construct(string $code, string $text, string $level)
+    public function __construct(string $code = null, string $text = null, string $level = null)
     {
         $this->code = $code;
         $this->text = $text;

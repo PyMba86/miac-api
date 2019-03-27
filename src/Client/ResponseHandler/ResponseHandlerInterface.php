@@ -7,7 +7,7 @@ use Miac\Client\Result;
 use Miac\Client\Session\Handler\SendResult;
 
 /**
- * Интерфейс обработкчика ответа
+ * Интерфейс обработчика ответа
  *
  * @package Miac\Client\ResponseHandler
  */
