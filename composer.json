@@ -12,11 +12,21 @@
   "minimum-stability": "stable",
   "type": "library",
   "require": {
-    "php": ">=7.1"
+    "php": ">=7.1",
+    "ext-soap": "*",
+    "ext-dom": "*"
   },
   "autoload": {
     "psr-4": {
-      "Miac\\": "src/"
+      "Miac\\": "src/Miac"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\Miac\\": "tests/Miac"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0"
   }
 }

@@ -1,10 +1,8 @@
 <?php
 
-namespace Miac\Client\Message\Slot;
+namespace Miac\Client\Message;
 
-
-use Miac\Client\Message\BaseWsMessage;
-use Miac\Client\Message\Slot\GetSlotByPeriod\SlotPeriod;
+use Miac\Client\Message\GetSlotByPeriod\SlotPeriod;
 use Miac\Client\RequestOptions\GetSlotListByPeriodOptions;
 
 /**

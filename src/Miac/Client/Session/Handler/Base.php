@@ -1,15 +1,12 @@
 <?php
 
-namespace Miac\Client\Handler;
+namespace Miac\Client\Session\Handler;
 
 use Exception;
 use Miac\Client\Exception as ClientException;
 use Miac\Client\InvalidWsdlFileException;
 use Miac\Client\Message\BaseWsMessage;
 use Miac\Client\Params\SessionHandlerParams;
-use Miac\Client\Session\Handler\HandlerInterface;
-use Miac\Client\Session\Handler\SendResult;
-use Miac\Client\Session\Handler\WsdlAnalyser;
 use Miac\Client\SoapClient as BaseSoapClient;
 use Miac\Client\Util\MsgBodyExtractor;
 use SoapClient;

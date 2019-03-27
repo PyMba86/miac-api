@@ -72,4 +72,22 @@ class Client extends Base
         }
         return $options;
     }
+
+    /**
+     * Set the session as stateful (true) or stateless (false)
+     *
+     * @param bool $newStateful
+     */
+    public function setStateful($newStateful)
+    {
+        $this->sessionHandler->setStateful($newStateful);
+    }
+
+    /**
+     * @return bool
+     */
+    public function isStateful()
+    {
+        return $this->sessionHandler->isStateful();
+    }
 }

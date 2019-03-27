@@ -1,6 +1,6 @@
 <?php
 
-namespace Miac\Client\Message\Slot\GetSlotByPeriod;
+namespace Miac\Client\Message\GetSlotByPeriod;
 
 use DateTime;
 

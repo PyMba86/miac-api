@@ -1,8 +1,6 @@
 <?php
 
-namespace Miac\Client\Message\Slot;
-
-use Miac\Client\Message\BaseWsMessage;
+namespace Miac\Client\Message;
 
 /**
  * Изменить состояние слота(талона)
