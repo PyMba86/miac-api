@@ -54,6 +54,33 @@ abstract class Base implements HandlerInterface
     protected $messagesAndVersions = [];
 
     /**
+     * Стандартные параметры SOAP клиента
+     *
+     * @var array
+     */
+    protected $soapClientOptions = [
+        'trace' => 1,
+        'exceptions' => 1,
+        'soap_version' => SOAP_1_1
+    ];
+
+    /**
+     * Base constructor.
+     * @param SessionHandlerParams $params
+     */
+    public function __construct(SessionHandlerParams $params)
+    {
+        $this->params = $params;
+
+        if ($params->overrideSoapClient instanceof \SoapClient) {
+            $this->soapClients[$params->overrideSoapClientWsdlName] = $params->overrideSoapClient;
+        }
+
+        $this->setStateful($params->stateful);
+        $this->extractor = new MsgBodyExtractor();
+    }
+
+    /**
      * @inheritdoc
      * @throws ClientException
      */
