@@ -102,6 +102,7 @@ abstract class Base implements HandlerInterface
             throw new ClientException($exception->getMessage(), $exception->getCode(), $exception);
         }
 
+        // TODO Зачем нам вытаскивать сырой xml
         $result->responseXml = $this->extractor->extract($this->getLastResponse($messageName));
 
         return $result;
@@ -154,6 +155,7 @@ abstract class Base implements HandlerInterface
         $wsdlId = $this->getWsdlIdFor($msgName);
 
         if (!empty($msgName)) {
+            // FIXME Убрать создание клиента на основе версий - Один клиент = Портал! Без версий
             if (!isset($this->soapClients[$wsdlId]) || !($this->soapClients[$wsdlId] instanceof SoapClient)) {
                 $this->soapClients[$wsdlId] = $this->initSoapClient($wsdlId);
             }
@@ -169,6 +171,7 @@ abstract class Base implements HandlerInterface
      * Result is an associative array: keys are message names, values are versions.
      *
      * @return array
+     * @throws InvalidWsdlFileException
      */
     public function getMessagesAndVersions()
     {

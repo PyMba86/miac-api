@@ -75,11 +75,13 @@ class WsdlAnalyser
      * @var array
      */
     protected static $wsdlDomXpath;
+
     /**
      * Loads messages & versions from WSDL.
      *
      * @param $wsdls
      * @return array
+     * @throws InvalidWsdlFileException
      */
     public static function loadMessagesAndVersions($wsdls)
     {
