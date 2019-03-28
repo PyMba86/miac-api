@@ -1,6 +1,6 @@
 <?php
 
-namespace Miac\Miac\Client\Session\Handler;
+namespace Miac\Client\Session\Handler;
 
 
 class Classmap

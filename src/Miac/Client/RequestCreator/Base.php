@@ -1,14 +1,13 @@
 <?php
 
-namespace Miac\Miac\Client\RequestCreator;
+namespace Miac\Client\RequestCreator;
 
 
 use Miac\Client\InvalidMessageException;
 use Miac\Client\Message\InvalidArgumentException;
 use Miac\Client\Params\RequestCreatorParams;
-use Miac\Client\RequestCreator\RequestCreatorInterface;
 use Miac\Client\RequestOptions\RequestOptionsInterface;
-use Miac\Miac\Client\RequestCreator\Converter\ConvertInterface;
+use Miac\Client\RequestCreator\Converter\ConvertInterface;
 
 class Base implements RequestCreatorInterface
 {

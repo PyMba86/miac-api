@@ -91,7 +91,6 @@ abstract class Base implements HandlerInterface
         $this->prepareForNextMessage($messageName, $messageOptions);
 
         try {
-
             // Вызов SOAP метода
             $result->responseObject = $this->getSoapClient($messageName)->$messageName($messageBody);
 
@@ -170,7 +169,6 @@ abstract class Base implements HandlerInterface
      * Result is an associative array: keys are message names, values are versions.
      *
      * @return array
-     * @throws InvalidWsdlFileException
      */
     public function getMessagesAndVersions()
     {

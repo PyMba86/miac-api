@@ -1,9 +1,6 @@
 <?php
 
-namespace Miac\Miac\Client\Session\Handler;
-
-use Miac\Client\Params\SessionHandlerParams;
-use Miac\Client\Session\Handler\Base;
+namespace Miac\Client\Session\Handler;
 
 /**
  * Обработчик сессии с header заголовками

@@ -1,6 +1,6 @@
 <?php
 
-namespace Miac\Miac\Client\RequestCreator\Converter;
+namespace Miac\Client\RequestCreator\Converter;
 
 use Miac\Client\Message\BaseWsMessage;
 use Miac\Client\Params\RequestCreatorParams;

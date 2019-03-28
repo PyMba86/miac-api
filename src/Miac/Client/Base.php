@@ -4,8 +4,10 @@ namespace Miac\Client;
 
 use Miac\Client\RequestCreator\RequestCreatorInterface;
 use Miac\Client\ResponseHandler\ResponseHandlerInterface;
+use Miac\Client\Session\Handler\HandlerFactory;
+use Miac\Client\RequestCreator\Factory as RequestCreatorFactory;
+use Miac\Client\ResponseHandler\Base as ResponseHandlerBase;
 use Miac\Client\Session\Handler\HandlerInterface;
-use Miac\Miac\Client\Session\Handler\HandlerFactory;
 
 /**
  * Base Client
