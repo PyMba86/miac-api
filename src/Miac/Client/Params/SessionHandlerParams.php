@@ -12,9 +12,9 @@ class SessionHandlerParams
 {
     /**
      * wsdl файлы и пути, который будет использоваться при запросах
-     * @var string[]
+     * @var string
      */
-    public $wsdl = [];
+    public $wsdl;
 
     /**
      * Сохранение сообщений при отправке
@@ -69,10 +69,6 @@ class SessionHandlerParams
     {
         if (isset($params['wsdl'])) {
             if (is_string($params['wsdl'])) {
-                $this->wsdl = [
-                    $params['wsdl']
-                ];
-            } elseif (is_array($params['wsdl'])) {
                 $this->wsdl = $params['wsdl'];
             }
         }

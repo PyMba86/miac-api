@@ -46,48 +46,16 @@ class Base implements RequestCreatorInterface
      * @param string $messageName the message name as named in the WSDL
      * @param RequestOptionsInterface $params
      * @throws InvalidArgumentException When invalid input is detected during message creation.
-     * @throws InvalidMessageException when trying to create a request for a message that is not in your WSDL.
      * @return mixed the created request
      */
     public function createRequest($messageName, RequestOptionsInterface $params)
     {
-        $this->checkMessageIsInWsdl($messageName);
         $builder = $this->findBuilderForMessage($messageName);
         if ($builder instanceof ConvertInterface) {
-            return $builder->convert($params, $this->getActiveVersionFor($messageName));
+            return $builder->convert($params);
         } else {
             throw new \RuntimeException('No builder found for message '.$messageName);
         }
-    }
-
-    /**
-     * Check if a given message is in the active WSDL(s). Throws exception if it isn't.
-     *
-     * @throws InvalidMessageException if message is not in loaded WSDL(s).
-     * @param string $messageName
-     */
-    protected function checkMessageIsInWsdl($messageName)
-    {
-        if (!array_key_exists($messageName, $this->messagesAndVersions)) {
-            throw new InvalidMessageException('Message "'.$messageName.'" is not in WDSL');
-        }
-    }
-
-    /**
-     * Get the version number active in the WSDL for the given message
-     *
-     * @param string $messageName
-     * @return float|string|null
-     */
-    protected function getActiveVersionFor($messageName)
-    {
-        $found = null;
-        if (isset($this->messagesAndVersions[$messageName]) &&
-            isset($this->messagesAndVersions[$messageName]['version'])
-        ) {
-            $found = $this->messagesAndVersions[$messageName]['version'];
-        }
-        return $found;
     }
 
     /**
@@ -111,9 +79,7 @@ class Base implements RequestCreatorInterface
         ) {
             $builder = $this->messageBuilders[$messageName];
         } else {
-            $section = substr($messageName, 0, strpos($messageName, '_'));
-            $message = substr($messageName, strpos($messageName, '_') + 1);
-            $builderClass = __NAMESPACE__.'\\Converter\\'.$section.'\\'.$message."Conv";
+            $builderClass = __NAMESPACE__.'\\Converter\\'.$messageName."Conv";
             if (class_exists($builderClass)) {
                 /** @var ConvertInterface $builder */
                 $builder = new $builderClass();

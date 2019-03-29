@@ -52,25 +52,22 @@ interface HandlerInterface
     /**
      * Get the last raw XML message that was received
      *
-     * @param string $msgName
      * @return string|null
      */
-    public function getLastResponse($msgName);
+    public function getLastResponse();
 
     /**
      * Get the request headers for the last SOAP message that was sent out
      *
-     * @param string $msgName
      * @return string|null
      */
-    public function getLastRequestHeaders($msgName);
+    public function getLastRequestHeaders();
 
     /**
      * Get the response headers for the last SOAP message that was received
      *
-     * @param string $msgName
      * @return string|null
      */
-    public function getLastResponseHeaders($msgName);
+    public function getLastResponseHeaders();
 
 }

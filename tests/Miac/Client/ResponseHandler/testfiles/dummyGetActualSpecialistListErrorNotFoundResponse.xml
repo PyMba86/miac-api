@@ -1,0 +1,4 @@
+<ns3:updateScheduleResponse xmlns:ns3="http://www.hostco.ru/portal" xmlns:ns2="http://www.hostco.ru/portal/types" xmlns="http://www.hostco.ru/types">
+    <ErrorCode>-1</ErrorCode>
+    <ErrorText>Медицинская организация с кодом 2019 не найдена</ErrorText>
+</ns3:updateScheduleResponse>

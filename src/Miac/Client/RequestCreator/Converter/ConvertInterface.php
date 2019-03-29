@@ -19,10 +19,9 @@ interface ConvertInterface
      * Convert request options into a WS Request structure
      *
      * @param RequestOptionsInterface $requestOptions The request options to build the message
-     * @param string|int $version The message version in the WSDL
      * @return BaseWsMessage Message request structure to be sent to the SOAP Server
      */
-    public function convert($requestOptions, $version);
+    public function convert($requestOptions);
     /**
      * Load Request Creator params
      *

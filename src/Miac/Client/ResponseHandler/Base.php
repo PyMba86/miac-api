@@ -86,10 +86,8 @@ class Base implements ResponseHandlerInterface
             $this->responseHandlers[$messageName] instanceof MessageResponseHandler) {
             return $this->responseHandlers[$messageName];
         } else {
-            $section = substr($messageName, 0, strpos($messageName, '_'));
-            $message = substr($messageName, strpos($messageName, '_') + 1);
 
-            $handlerClass = __NAMESPACE__ . '\\' . $section . '\\Handler' . $message;
+            $handlerClass = __NAMESPACE__ . '\\' . $messageName . 'Handler' ;
 
             if (class_exists($handlerClass)) {
                 $handler = new $handlerClass();

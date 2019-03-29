@@ -41,11 +41,12 @@ class SoapHeader extends Base
 
     /**
      * @inheritdoc
+     * @throws \Exception
      */
     public function setStateful($stateful): void
     {
         if ($stateful === false) {
-            throw new UnsupportedOperationException('Stateful messages are mandatory on SoapHeader 2');
+            throw new \Exception('Stateful messages are mandatory on SoapHeader');
         }
     }
 

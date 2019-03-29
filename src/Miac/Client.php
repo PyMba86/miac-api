@@ -4,6 +4,7 @@ namespace Miac;
 
 use Miac\Client\Base;
 use Miac\Client\Params;
+use Miac\Client\RequestOptions;
 use Miac\Client\RequestOptions\RequestOptionsInterface;
 
 /**
@@ -89,5 +90,23 @@ class Client extends Base
     public function isStateful()
     {
         return $this->sessionHandler->isStateful();
+    }
+
+
+    /**
+     * GetActualSpecialList
+     *
+     * @param RequestOptions\GetActualSpecialistListOptions $options
+     * @param array $messageOptions
+     * @return Client\Result
+     * @throws Client\Exception
+     * @throws Client\InvalidMessageException
+     */
+    public function getActualSpecialistList(
+        RequestOptions\GetActualSpecialistListOptions $options,
+        $messageOptions = [])
+    {
+        $msgName = "GetActualSpecialistList";
+        return $this->callMessage($msgName, $options, $messageOptions);
     }
 }
