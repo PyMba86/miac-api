@@ -79,6 +79,7 @@ class Base implements RequestCreatorInterface
         ) {
             $builder = $this->messageBuilders[$messageName];
         } else {
+            $messageName = ucfirst($messageName);
             $builderClass = __NAMESPACE__.'\\Converter\\'.$messageName."Conv";
             if (class_exists($builderClass)) {
                 /** @var ConvertInterface $builder */

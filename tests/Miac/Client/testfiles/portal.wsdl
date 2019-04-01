@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="portal" targetNamespace="http://www.hostco.ru/portal" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.hostco.ru/portal" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.hostco.ru/portal" xmlns:pt="http://www.hostco.ru/portal/types" xmlns:ct="http://www.hostco.ru/types">
+      <xsd:import namespace="http://www.hostco.ru/types" schemaLocation="portal.xsd"/>
+      <xsd:import namespace="http://www.hostco.ru/portal/types" schemaLocation="portal_1.xsd"/>
+      <xsd:element name="updateScheduleRequest" type="pt:UpdateScheduleRequest"/>
+      <xsd:element name="updateScheduleResponse" type="ct:PortalServiceResponseType"/>
+      <xsd:element name="deleteScheduleRequest" type="ct:ScheduleElementType"/>
+      <xsd:element name="deleteScheduleResponse" type="ct:PortalServiceResponseType"/>
+      <xsd:element name="changeSlotStateRequest" type="ct:ChangeSlotStateSlipType"/>
+      <xsd:element name="changeSlotStateResponse" type="ct:PortalServiceResponseType"/>
+      <xsd:element name="readSlotStateRequest" type="ct:SlotInfoGUID"/>
+      <xsd:element name="readSlotStateResponse" type="ct:SlotListResponseType"/>
+      <xsd:element name="readFilteredSlotsStateRequest" type="ct:FilterOptionsType"/>
+      <xsd:element name="readFilteredSlotsStateResponse" type="ct:SlotListResponseType"/>
+      <xsd:element name="updateMuInfoRequest" type="pt:UpdateMuInfoRequest"/>
+      <xsd:element name="updateMuInfoResponse" type="ct:PortalServiceResponseType"/>
+      <xsd:element name="updateCabinetInfoRequest" type="pt:UpdateCabinetInfoRequest"/>
+      <xsd:element name="updateCabinetInfoResponse" type="ct:PortalServiceResponseType"/>
+      <xsd:element name="changeCabinetRequest" type="pt:ChangeCabinetRequest"/>
+      <xsd:element name="changeCabinetResponse" type="ct:PortalServiceResponseType"/>
+      <xsd:element name="updateDistrictRequest" type="pt:UpdateDistrictRequest"/>
+      <xsd:element name="updateDistrictResponse" type="ct:PortalServiceResponseType"/>
+      <xsd:element name="updateStaffInfoRequest" type="pt:UpdateStaffInfoRequest"/>
+      <xsd:element name="updateStaffInfoResponse" type="ct:PortalServiceResponseType"/>
+      <xsd:element name="updateServicePricesRequest" type="pt:UpdateServicePricesRequest"/>
+      <xsd:element name="updateServicePricesResponse" type="ct:PortalServiceResponseType"/>
+      <xsd:element name="updatePolicyInfoRequest" type="pt:UpdatePolicyInfoRequest"/>
+      <xsd:element name="updatePolicyInfoResponse" type="ct:PortalServiceResponseType"/>
+      <xsd:element name="putParameterRequest" type="pt:putParametersRequest"/>
+      <xsd:element name="putParameterResponse" type="ct:PortalServiceResponseType"/>
+      <xsd:element name="getMuInfoRequest" type="pt:getMuInfoRequest"/>
+      <xsd:element name="getMuInfoResponse" type="pt:getMuInfoResponse"/>
+      <xsd:element name="getScheduleInfoRequest" type="ct:FilterOptionsType"/>
+      <xsd:element name="getScheduleInfoResponse" type="pt:ScheduleInfoResponse"/>
+      <xsd:element name="updateSickLeavesRequest" type="pt:UpdateSickLeavesRequest"/>
+      <xsd:element name="updateSickLeavesResponse" type="ct:PortalServiceResponseType"/>
+      <xsd:element name="deleteSlotRequest" type="ct:ExtendedSlotInfoGUID"/>
+      <xsd:element name="deleteSlotResponse" type="ct:PortalServiceResponseType"/>
+      <xsd:element name="getAppointmentsBySNILSRequest" type="ct:SNILSType"/>
+      <xsd:element name="getAppointmentsBySNILSResponse" type="pt:GetAppointmentsBySNILSResponseType"/>
+      <xsd:element name="getSickLeaveListRequest" type="ct:MuCodeType"/>
+      <xsd:element name="getSickLeaveListResponse" type="pt:GetSickLeaveListResponseType"/>
+      <xsd:element name="getActualSpecialistListRequest" type="pt:ActualSpecialistListRequest"/>
+      <xsd:element name="getActualSpecialistListResponse" type="pt:ActualSpecialistListResponse"/>
+      <xsd:element name="getSlotListByPeriodRequest" type="pt:SlotListByPeriodRequest"/>
+      <xsd:element name="getSlotListByPeriodResponse" type="pt:SlotListByPeriodResponse"/>
+      <xsd:element name="findDistrictRequest" type="pt:FindDistrictRequest"/>
+      <xsd:element name="findDistrictResponse" type="pt:FindDistrictResponse"/>
+      <xsd:element name="callDoctorRequest" type="pt:CallDoctorPortalRequest"/>
+      <xsd:element name="callDoctorResponse" type="ct:PortalServiceResponseType"/>
+      <xsd:element name="cancelCallDoctorRequest" type="pt:CancelCallDoctorPortalRequest"/>
+      <xsd:element name="cancelCallDoctorResponse" type="ct:PortalServiceResponseType"/>
+      <xsd:element name="deleteDistrictRequest" type="pt:DeleteDistrictPortalRequest"/>
+      <xsd:element name="deleteDistrictResponse" type="ct:PortalServiceResponseType"/>
+      <xsd:element name="getDistrictsRequest" type="pt:GetDistrictsPortalRequest"/>
+      <xsd:element name="getDistrictsResponse" type="pt:GetDistrictsPortalResponse"/>
+      <xsd:element name="getDistrictRequest" type="pt:GetDistrictRequest"/>
+      <xsd:element name="getDistrictResponse" type="pt:GetDistrictResponse"/>
+      <xsd:element name="finishCallDoctorRequest" type="pt:FinishCallDoctorPortalRequest"/>
+      <xsd:element name="finishCallDoctorResponse" type="ct:PortalServiceResponseType"/>
+      <xsd:element name="changeCallDoctorStatusRequest" type="pt:ChangeCallDoctorStatusRequest"/>
+      <xsd:element name="changeCallDoctorStatusResponse" type="ct:PortalServiceResponseType"/>
+      <xsd:element name="getCallDoctorBySNILSRequest" type="ct:SNILSType"/>
+      <xsd:element name="getCallDoctorBySNILSResponse" type="pt:GetCallDoctorBySNILSResponse"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="updateSickLeavesRequest">
+    <wsdl:part element="tns:updateSickLeavesRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="updateSickLeavesResponse">
+    <wsdl:part element="tns:updateSickLeavesResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="deleteSlotRequest">
+    <wsdl:part element="tns:deleteSlotRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="cancelCallDoctorResponse">
+    <wsdl:part element="tns:cancelCallDoctorResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="updateDistrictResponse">
+    <wsdl:part element="tns:updateDistrictResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="updateServicePricesRequest">
+    <wsdl:part element="tns:updateServicePricesRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getSickLeaveListResponse">
+    <wsdl:part element="tns:getSickLeaveListResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="changeSlotStateRequest">
+    <wsdl:part element="tns:changeSlotStateRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="readFilteredSlotsStateResponse">
+    <wsdl:part element="tns:readFilteredSlotsStateResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="findDistrictResponse">
+    <wsdl:part element="tns:findDistrictResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="putParameterResponse">
+    <wsdl:part element="tns:putParameterResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getSlotListByPeriodRequest">
+    <wsdl:part element="tns:getSlotListByPeriodRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="finishCallDoctorResponse">
+    <wsdl:part element="tns:finishCallDoctorResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="deleteScheduleResponse">
+    <wsdl:part element="tns:deleteScheduleResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getAppointmentsBySNILSResponse">
+    <wsdl:part element="tns:getAppointmentsBySNILSResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="deleteDistrictRequest">
+    <wsdl:part element="tns:deleteDistrictRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getDistrictResponse">
+    <wsdl:part element="tns:getDistrictResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getSlotListByPeriodResponse">
+    <wsdl:part element="tns:getSlotListByPeriodResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="deleteDistrictResponse">
+    <wsdl:part element="tns:deleteDistrictResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="readFilteredSlotsStateRequest">
+    <wsdl:part element="tns:readFilteredSlotsStateRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="deleteSlotResponse">
+    <wsdl:part element="tns:deleteSlotResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getScheduleInfoRequest">
+    <wsdl:part element="tns:getScheduleInfoRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getDistrictsResponse">
+    <wsdl:part element="tns:getDistrictsResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="findDistrictRequest">
+    <wsdl:part element="tns:findDistrictRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getCallDoctorBySNILSResponse">
+    <wsdl:part element="tns:getCallDoctorBySNILSResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="updateMuInfoRequest">
+    <wsdl:part element="tns:updateMuInfoRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getDistrictsRequest">
+    <wsdl:part element="tns:getDistrictsRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getMuInfoRequest">
+    <wsdl:part element="tns:getMuInfoRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getDistrictRequest">
+    <wsdl:part element="tns:getDistrictRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="updateStaffInfoRequest">
+    <wsdl:part element="tns:updateStaffInfoRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="updateCabinetInfoRequest">
+    <wsdl:part element="tns:updateCabinetInfoRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="updateMuInfoResponse">
+    <wsdl:part element="tns:updateMuInfoResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="updatePolicyInfoResponse">
+    <wsdl:part element="tns:updatePolicyInfoResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="updateScheduleRequest">
+    <wsdl:part element="tns:updateScheduleRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getCallDoctorBySNILSRequest">
+    <wsdl:part element="tns:getCallDoctorBySNILSRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getMuInfoResponse">
+    <wsdl:part element="tns:getMuInfoResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="changeCabinetRequest">
+    <wsdl:part element="tns:changeCabinetRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="updateStaffInfoResponse">
+    <wsdl:part element="tns:updateStaffInfoResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="cancelCallDoctorRequest">
+    <wsdl:part element="tns:cancelCallDoctorRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="changeCallDoctorStatusResponse">
+    <wsdl:part element="tns:changeCallDoctorStatusResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="changeSlotStateResponse">
+    <wsdl:part element="tns:changeSlotStateResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="updatePolicyInfoRequest">
+    <wsdl:part element="tns:updatePolicyInfoRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="putParameterRequest">
+    <wsdl:part element="tns:putParameterRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getSickLeaveListRequest">
+    <wsdl:part element="tns:getSickLeaveListRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="readSlotStateRequest">
+    <wsdl:part element="tns:readSlotStateRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="callDoctorRequest">
+    <wsdl:part element="tns:callDoctorRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="callDoctorResponse">
+    <wsdl:part element="tns:callDoctorResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="changeCallDoctorStatusRequest">
+    <wsdl:part element="tns:changeCallDoctorStatusRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getActualSpecialistListRequest">
+    <wsdl:part element="tns:getActualSpecialistListRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="deleteScheduleRequest">
+    <wsdl:part element="tns:deleteScheduleRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="readSlotStateResponse">
+    <wsdl:part element="tns:readSlotStateResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getActualSpecialistListResponse">
+    <wsdl:part element="tns:getActualSpecialistListResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getScheduleInfoResponse">
+    <wsdl:part element="tns:getScheduleInfoResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="changeCabinetResponse">
+    <wsdl:part element="tns:changeCabinetResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="updateCabinetInfoResponse">
+    <wsdl:part element="tns:updateCabinetInfoResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="finishCallDoctorRequest">
+    <wsdl:part element="tns:finishCallDoctorRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="updateScheduleResponse">
+    <wsdl:part element="tns:updateScheduleResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getAppointmentsBySNILSRequest">
+    <wsdl:part element="tns:getAppointmentsBySNILSRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="updateServicePricesResponse">
+    <wsdl:part element="tns:updateServicePricesResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="updateDistrictRequest">
+    <wsdl:part element="tns:updateDistrictRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="portal">
+    <wsdl:operation name="updateSchedule">
+      <wsdl:documentation>Обновление базовых таблиц расписания</wsdl:documentation>
+      <wsdl:input message="tns:updateScheduleRequest"/>
+      <wsdl:output message="tns:updateScheduleResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="changeSlotState">
+      <wsdl:documentation>Изменить состояние слота</wsdl:documentation>
+      <wsdl:input message="tns:changeSlotStateRequest"/>
+      <wsdl:output message="tns:changeSlotStateResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="readSlotState">
+      <wsdl:documentation>Прочитать состояние слота по его коду</wsdl:documentation>
+      <wsdl:input message="tns:readSlotStateRequest"/>
+      <wsdl:output message="tns:readSlotStateResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="readFilteredSlotsState">
+      <wsdl:documentation>Прочитать состояние слотов, удовлетворяющих
+        фильтру</wsdl:documentation>
+      <wsdl:input message="tns:readFilteredSlotsStateRequest"/>
+      <wsdl:output message="tns:readFilteredSlotsStateResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="updateMuInfo">
+      <wsdl:documentation>Обновить информацию о МО</wsdl:documentation>
+      <wsdl:input message="tns:updateMuInfoRequest"/>
+      <wsdl:output message="tns:updateMuInfoResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="updateCabinetInfo">
+      <wsdl:documentation>Обновить информацию о кабинетах</wsdl:documentation>
+      <wsdl:input message="tns:updateCabinetInfoRequest"/>
+      <wsdl:output message="tns:updateCabinetInfoResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="changeCabinet">
+      <wsdl:documentation>Сменить кабинет у врача</wsdl:documentation>
+      <wsdl:input message="tns:changeCabinetRequest"/>
+      <wsdl:output message="tns:changeCabinetResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="updateStaffInfo">
+      <wsdl:documentation>Обновить информацию о медицинских работниках и их
+        специальностях</wsdl:documentation>
+      <wsdl:input message="tns:updateStaffInfoRequest"/>
+      <wsdl:output message="tns:updateStaffInfoResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="updateDistrict">
+      <wsdl:documentation>Обновить информацию об участках</wsdl:documentation>
+      <wsdl:input message="tns:updateDistrictRequest"/>
+      <wsdl:output message="tns:updateDistrictResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="updateServicePrices">
+      <wsdl:documentation>Обновить информацию о прейскуранте цен на услуги
+        МО</wsdl:documentation>
+      <wsdl:input message="tns:updateServicePricesRequest"/>
+      <wsdl:output message="tns:updateServicePricesResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="updatePolicyInfo">
+      <wsdl:documentation>Обновить информацию о полисе пациента</wsdl:documentation>
+      <wsdl:input message="tns:updatePolicyInfoRequest"/>
+      <wsdl:output message="tns:updatePolicyInfoResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="putParameter">
+      <wsdl:documentation>Изменить параметры пациент</wsdl:documentation>
+      <wsdl:input message="tns:putParameterRequest"/>
+      <wsdl:output message="tns:putParameterResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="deleteSchedule">
+      <wsdl:documentation>Удалить расписание</wsdl:documentation>
+      <wsdl:input message="tns:deleteScheduleRequest"/>
+      <wsdl:output message="tns:deleteScheduleResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getMuInfo">
+      <wsdl:documentation>Сервисный запрос на получение информации об МО</wsdl:documentation>
+      <wsdl:input message="tns:getMuInfoRequest"/>
+      <wsdl:output message="tns:getMuInfoResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getScheduleInfo">
+      <wsdl:documentation>Сервисный запрос на получение информации о
+        расписании</wsdl:documentation>
+      <wsdl:input message="tns:getScheduleInfoRequest"/>
+      <wsdl:output message="tns:getScheduleInfoResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="updateSickLeaves">
+      <wsdl:documentation>Сервисный запрос на обновление информации по
+        больничным листам медработников МО</wsdl:documentation>
+      <wsdl:input message="tns:updateSickLeavesRequest"/>
+      <wsdl:output message="tns:updateSickLeavesResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="deleteSlot">
+      <wsdl:documentation>Сервисный запрос на удаление слота</wsdl:documentation>
+      <wsdl:input message="tns:deleteSlotRequest"/>
+      <wsdl:output message="tns:deleteSlotResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getAppointmentsBySNILS">
+      <wsdl:documentation>Возврат записей по СНИЛС пациента</wsdl:documentation>
+      <wsdl:input message="tns:getAppointmentsBySNILSRequest"/>
+      <wsdl:output message="tns:getAppointmentsBySNILSResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getSickLeaveList">
+      <wsdl:documentation>Получить список текущих больничных листов</wsdl:documentation>
+      <wsdl:input message="tns:getSickLeaveListRequest"/>
+      <wsdl:output message="tns:getSickLeaveListResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getActualSpecialistList">
+      <wsdl:input message="tns:getActualSpecialistListRequest"/>
+      <wsdl:output message="tns:getActualSpecialistListResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getSlotListByPeriod">
+      <wsdl:input message="tns:getSlotListByPeriodRequest"/>
+      <wsdl:output message="tns:getSlotListByPeriodResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="findDistrict">
+      <wsdl:documentation>Поиск участка по адресу</wsdl:documentation>
+      <wsdl:input message="tns:findDistrictRequest"/>
+      <wsdl:output message="tns:findDistrictResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="callDoctor">
+      <wsdl:documentation>Вызов врача на дом</wsdl:documentation>
+      <wsdl:input message="tns:callDoctorRequest"/>
+      <wsdl:output message="tns:callDoctorResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="cancelCallDoctor">
+      <wsdl:documentation>Отмена вызова врача на дом</wsdl:documentation>
+      <wsdl:input message="tns:cancelCallDoctorRequest"/>
+      <wsdl:output message="tns:cancelCallDoctorResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="finishCallDoctor">
+      <wsdl:documentation>Завершение вызова врача на дом</wsdl:documentation>
+      <wsdl:input message="tns:finishCallDoctorRequest"/>
+      <wsdl:output message="tns:finishCallDoctorResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="deleteDistrict">
+      <wsdl:documentation>Удаление участка</wsdl:documentation>
+      <wsdl:input message="tns:deleteDistrictRequest"/>
+      <wsdl:output message="tns:deleteDistrictResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="changeCallDoctorStatus">
+      <wsdl:documentation>Изменение статуса вызова врача на дом</wsdl:documentation>
+      <wsdl:input message="tns:changeCallDoctorStatusRequest"/>
+      <wsdl:output message="tns:changeCallDoctorStatusResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getDistricts">
+      <wsdl:documentation>Получить участки</wsdl:documentation>
+      <wsdl:input message="tns:getDistrictsRequest"/>
+      <wsdl:output message="tns:getDistrictsResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getDistrict">
+      <wsdl:documentation>Получить данные об участке</wsdl:documentation>
+      <wsdl:input message="tns:getDistrictRequest"/>
+      <wsdl:output message="tns:getDistrictResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getCallDoctorBySNILS">
+      <wsdl:documentation>Получение сведений о вызовах врача на дом</wsdl:documentation>
+      <wsdl:input message="tns:getCallDoctorBySNILSRequest"/>
+      <wsdl:output message="tns:getCallDoctorBySNILSResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="portalSOAP" type="tns:portal">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="updateSchedule">
+      <soap:operation soapAction="http://www.hostco.ru/portal/updateSchedule"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="changeSlotState">
+      <soap:operation soapAction="http://www.hostco.ru/portal/changeSlotState"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="readSlotState">
+      <soap:operation soapAction="http://www.hostco.ru/portal/readSlotState"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="readFilteredSlotsState">
+      <soap:operation soapAction="http://www.hostco.ru/portal/readFilteredSlotsState"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateMuInfo">
+      <soap:operation soapAction="http://www.hostco.ru/portal/updateMuInfo"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateCabinetInfo">
+      <soap:operation soapAction="http://www.hostco.ru/portal/updateCabinetInfo"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="changeCabinet">
+      <soap:operation soapAction="http://www.hostco.ru/portal/changeCabinet"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateDistrict">
+      <soap:operation soapAction="http://www.hostco.ru/portal/updateDistrict"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateStaffInfo">
+      <soap:operation soapAction="http://www.hostco.ru/portal/updateStaffInfo"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateServicePrices">
+      <soap:operation soapAction="http://www.hostco.ru/portal/updateServicePrices"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatePolicyInfo">
+      <soap:operation soapAction="http://www.hostco.ru/portal/updatePolicyInfo"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="putParameter">
+      <soap:operation soapAction="http://www.hostco.ru/portal/putParameter"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteSchedule">
+      <soap:operation soapAction="http://www.hostco.ru/portal/deleteSchedule"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMuInfo">
+      <soap:operation soapAction="http://www.hostco.ru/portal/getMuInfo"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getScheduleInfo">
+      <soap:operation soapAction="http://www.hostco.ru/portal/getScheduleInfo"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateSickLeaves">
+      <soap:operation soapAction="http://www.hostco.ru/portal/updateSickLeaves"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteSlot">
+      <soap:operation soapAction="http://www.hostco.ru/portal/deleteSlot"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAppointmentsBySNILS">
+      <soap:operation soapAction="http://www.hostco.ru/portal/getAppointmentsBySNILS"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSickLeaveList">
+      <soap:operation soapAction="http://www.hostco.ru/portal/getSickLeaveList"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getActualSpecialistList">
+      <soap:operation soapAction="http://www.hostco.ru/portal/getActualSpecialistList"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSlotListByPeriod">
+      <soap:operation soapAction="http://www.hostco.ru/portal/getSlotListByPeriod"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findDistrict">
+      <soap:operation soapAction="http://www.hostco.ru/portal/findDistrict"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="callDoctor">
+      <soap:operation soapAction="http://www.hostco.ru/portal/callDoctor"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cancelCallDoctor">
+      <soap:operation soapAction="http://www.hostco.ru/portal/cancelCallDoctor"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="finishCallDoctor">
+      <soap:operation soapAction="http://www.hostco.ru/portal/finishCallDoctor"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCallDoctorBySNILS">
+      <soap:operation soapAction="http://www.hostco.ru/portal/getCallDoctorBySNILS"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteDistrict">
+      <soap:operation soapAction="http://www.hostco.ru/portal/deleteDistrict"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="changeCallDoctorStatus">
+      <soap:operation soapAction="http://www.hostco.ru/portal/changeCallDoctorStatus"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDistricts">
+      <soap:operation soapAction="http://www.hostco.ru/portal/getDistricts"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDistrict">
+      <soap:operation soapAction="http://www.hostco.ru/portal/getDistrict"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="portal">
+    <wsdl:port binding="tns:portalSOAP" name="portalSOAP">
+      <soap:address location="http://10.86.6.39:8080/PortalService/services/portal"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

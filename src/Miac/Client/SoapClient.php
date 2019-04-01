@@ -24,11 +24,12 @@ class SoapClient extends \SoapClient
      */
     public function __doRequest($request, $location, $action, $version, $one_way = 0)
     {
-        if (!extension_loaded('xsl')) {
+        // FIXME Убрал преобразование данных xsl
+       /* if (!extension_loaded('xsl')) {
             throw new Exception("PHP XSL extension is not loaded");
         }
-        $newRequest = $this->transformIncomingRequest($request);
-        parent::__doRequest($newRequest, $location, $action, $version, $one_way);
+        $newRequest = $this->transformIncomingRequest($request); */
+        parent::__doRequest($request, $location, $action, $version, $one_way);
     }
 
     /**

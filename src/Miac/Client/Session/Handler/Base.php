@@ -53,7 +53,7 @@ abstract class Base implements HandlerInterface
         $this->params = $params;
         $this->setStateful($params->stateful);
         // TODO Выташить создание клиента наружу
-      //  $this->soapClient = new BaseSoapClient($this->params->wsdl,$this->makeSoapClientOptions());
+        $this->soapClient = new BaseSoapClient($this->params->wsdl,$this->makeSoapClientOptions());
         $this->extractor = new MsgBodyExtractor();
     }
 

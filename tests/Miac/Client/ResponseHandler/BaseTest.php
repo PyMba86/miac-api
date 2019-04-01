@@ -26,6 +26,6 @@ class BaseTest extends BaseTestCase
         $this->assertEquals(Result::STATUS_ERROR, $result->status);
         $this->assertEquals(1, count($result->messages));
         $this->assertEquals('-1', $result->messages[0]->code);
-        $this->assertEquals('Медицинская организация с кодом 2019 не найдена', $result->messages[0]->text);
+        $this->assertEquals('Портальный сервис : Медицинская организация с кодом "2019" не найдена', $result->messages[0]->text);
     }
 }

@@ -8,12 +8,20 @@ use Miac\Client\RequestOptions\GetActualSpecialistListOptions;
 
 class ClientTest extends BaseTestCase
 {
+    protected function makePathToDummyWSDL()
+    {
+        return realpath(
+            dirname(__FILE__).DIRECTORY_SEPARATOR."Client".
+            DIRECTORY_SEPARATOR."testfiles".DIRECTORY_SEPARATOR."portal.wsdl"
+        );
+    }
+
     public function testCanCreateClient()
     {
         $params = new Params([
             'sessionHandlerParams' => [
                 'stateful' => true,
-                'wsdl' => 'dummy wsdl'
+                'wsdl' => $this->makePathToDummyWSDL(),
             ],
             'requestCreatorParams' => []
         ]);
@@ -65,7 +73,7 @@ class ClientTest extends BaseTestCase
             ->expects($this->once())
             ->method('sendMessage')
             ->with(
-                'GetActualSpecialistList',
+                'getActualSpecialistList',
                 $expectedMessageResult,
                 ['endSession' => false, 'returnXml' => true]
             )
@@ -80,9 +88,8 @@ class ClientTest extends BaseTestCase
         $mockResponseHandler
             ->expects($this->once())
             ->method('analyzeResponse')
-            ->with($mockedSendResult, 'GetActualSpecialistList')
+            ->with($mockedSendResult, 'getActualSpecialistList')
             ->will($this->returnValue($messageResult));
-
 
         $par = new Params();
         $par->sessionHandler = $mockSessionHandler;

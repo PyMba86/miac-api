@@ -106,7 +106,7 @@ class Client extends Base
         RequestOptions\GetActualSpecialistListOptions $options,
         $messageOptions = [])
     {
-        $msgName = "GetActualSpecialistList";
+        $msgName = "getActualSpecialistList";
         return $this->callMessage($msgName, $options, $messageOptions);
     }
 }
