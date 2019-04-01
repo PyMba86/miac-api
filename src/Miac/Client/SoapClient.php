@@ -19,17 +19,17 @@ class SoapClient extends \SoapClient
      * @param string $action SOAP действие
      * @param int $version SOAP версия
      * @param int $one_way
-     * @return string|void XML SOAP ответ
+     * @return string XML SOAP ответ
      * @throws Exception Когда PHP XSL расширение не установлено или wsdl файл не найден
      */
     public function __doRequest($request, $location, $action, $version, $one_way = 0)
     {
-        // FIXME Убрал преобразование данных xsl
-       /* if (!extension_loaded('xsl')) {
+        if (!extension_loaded('xsl')) {
             throw new Exception("PHP XSL extension is not loaded");
         }
-        $newRequest = $this->transformIncomingRequest($request); */
-        parent::__doRequest($request, $location, $action, $version, $one_way);
+        $newRequest = $this->transformIncomingRequest($request);
+        $result = parent::__doRequest($newRequest, $location, $action, $version, $one_way);
+        return $result;
     }
 
     /**
@@ -42,10 +42,10 @@ class SoapClient extends \SoapClient
     {
         $newRequest = null;
 
-        $xsltFile = dirname(__FILE__).DIRECTORY_SEPARATOR.self::REMOVE_EMPTY_XSLT_LOCATION;
+        $xsltFile = dirname(__FILE__) . DIRECTORY_SEPARATOR . self::REMOVE_EMPTY_XSLT_LOCATION;
 
         if (!is_readable($xsltFile)) {
-            throw  new Exception('XSLT file "'.$xsltFile.'" is not readable!');
+            throw  new Exception('XSLT file "' . $xsltFile . '" is not readable!');
         }
 
         $dom = new \DOMDocument('1.0', 'UTF-8');
