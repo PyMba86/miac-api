@@ -1,0 +1,3 @@
+<ns3:updateMuInfoResponse xmlns:ns3="http://www.hostco.ru/portal" xmlns:ns2="http://www.hostco.ru/portal/types" xmlns="http://www.hostco.ru/types">
+    <ErrorCode>0</ErrorCode>
+</ns3:updateMuInfoResponse>

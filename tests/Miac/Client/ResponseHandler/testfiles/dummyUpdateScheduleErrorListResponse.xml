@@ -1,0 +1,36 @@
+<por:updateScheduleResponse>
+    <typ:ErrorCode>-2</typ:ErrorCode>
+    <typ:ErrorText>Ошибки по отдельным слотам</typ:ErrorText>
+    <typ:ErrorList>
+        <typ:RecordError>
+            <typ:RecordCode>998_123</typ:RecordCode>
+            <typ:RecordErrorCode>0</typ:RecordErrorCode>
+        </typ:RecordError>
+        <typ:RecordError>
+            <typ:RecordCode>998_124</typ:RecordCode>
+            <typ:RecordErrorCode>0</typ:RecordErrorCode>
+        </typ:RecordError>
+
+        <typ:RecordError>
+            <typ:RecordCode>998_125</typ:RecordCode>
+            <typ:RecordErrorCode>0</typ:RecordErrorCode>
+        </typ:RecordError>
+        <typ:RecordError>
+            <typ:RecordCode>998_126</typ:RecordCode>
+            <typ:RecordErrorCode>0</typ:RecordErrorCode>
+        </typ:RecordError>
+        <typ:RecordError>
+            <typ:RecordCode>998_127</typ:RecordCode>
+            <typ:RecordErrorCode>0</typ:RecordErrorCode>
+        </typ:RecordError>
+        <typ:RecordError>
+            <typ:RecordCode>998_128</typ:RecordCode>
+            <typ:RecordErrorCode>-43</typ:RecordErrorCode>
+            <typ:RecordErrorText>Удаление слота запрещено: слот занят из источника записи: 1</typ:RecordErrorText>
+        </typ:RecordError>
+        <typ:RecordError>
+            <typ:RecordCode>998_129</typ:RecordCode>
+            <typ:RecordErrorCode>0</typ:RecordErrorCode>
+        </typ:RecordError>
+    </typ:ErrorList>
+</por:updateScheduleResponse>
