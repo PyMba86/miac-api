@@ -1,0 +1,3 @@
+<ns3:getScheduleInfoResponse xmlns:ns3="http://www.hostco.ru/portal" xmlns:ns2="http://www.hostco.ru/portal/types" xmlns="http://www.hostco.ru/types">
+    <ns2:scheduleInfo/>
+</ns3:getScheduleInfoResponse>

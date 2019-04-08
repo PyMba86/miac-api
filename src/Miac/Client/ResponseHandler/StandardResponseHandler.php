@@ -18,27 +18,20 @@ abstract class StandardResponseHandler implements MessageResponseHandler
      *
      * @param SendResult $response
      * @param string $nodeError Название ноды содержащий код ошибки (первый элемент в ответе)
-     * @param string $nodeCategory Название ноды содержащий категорию ошибки (первый элемент в ответе)
      * @param string $nodeMessage Название ноды содержащий сообщение ошибки (все ноды в ответе)
      * @return Result
      * @throws Exception
      */
-    protected function analyzeWithErrCodeCategoryMsgNodeName(SendResult $response, string $nodeError,
-                                                             string $nodeCategory, string $nodeMessage)
+    protected function analyzeWithErrCodeCategoryMsgNodeName(SendResult $response, string $nodeError, string $nodeMessage)
     {
         $analyzeResponse = new Result($response);
         $domDoc = $this->loadDomDocument($response->responseXml);
         $errorCodeNode = $domDoc->getElementsByTagName($nodeError)->item(0);
 
         if (!is_null($errorCodeNode)) {
-            $errorCatNode = $domDoc->getElementsByTagName($nodeCategory)->item(0);
-            if ($errorCatNode instanceof \DOMNode) {
-                $analyzeResponse->status = $this->makeStatusFromErrorQualifier($errorCatNode->nodeValue);
-            } else {
-                $analyzeResponse->status = Result::STATUS_ERROR;
-            }
-
             $errorCode = $errorCodeNode->nodeValue;
+            $analyzeResponse->status = $this->makeStatusFromErrorQualifier($errorCode);
+
             $errorTextNodeList = $domDoc->getElementsByTagName($nodeMessage);
 
             $analyzeResponse->messages[] = new Result\NotOk(
@@ -61,7 +54,6 @@ abstract class StandardResponseHandler implements MessageResponseHandler
         return $this->analyzeWithErrCodeCategoryMsgNodeName(
             $response,
             "ErrorCode",
-            "ErrorCategory",
             "ErrorText"
         );
     }
@@ -76,7 +68,6 @@ abstract class StandardResponseHandler implements MessageResponseHandler
         return $this->analyzeWithErrCodeCategoryMsgNodeName(
             $response,
             "ErrorCode",
-            "StatusCode",
             "ErrorText"
         );
     }
@@ -109,26 +100,12 @@ abstract class StandardResponseHandler implements MessageResponseHandler
     protected function makeStatusFromErrorQualifier($qualifier, $defaultStatus = Result::STATUS_ERROR)
     {
         $statusQualMapping = [
-            'INF' => Result::STATUS_INFO,
-            'WEC' => Result::STATUS_WARN,
-            'WZZ' => Result::STATUS_WARN, //Mutually defined warning
-            'WA' => Result::STATUS_WARN, //Info line Warning - PNR_AddMultiElements
-            'W' => Result::STATUS_WARN,
-            'EC' => Result::STATUS_ERROR,
-            'ERR' => Result::STATUS_ERROR, //DocRefund_UpdateRefund
-            'ERC' => Result::STATUS_ERROR, //DocRefund_UpdateRefund
-            'X' => Result::STATUS_ERROR,
-            '001' => Result::STATUS_ERROR, //Air_MultiAvailability
-            'O' => Result::STATUS_OK,
-            'STA' => Result::STATUS_OK,
-            'ZZZ' => Result::STATUS_UNKNOWN
+            "0" => Result::STATUS_OK
         ];
         if (array_key_exists($qualifier, $statusQualMapping)) {
             $status = $statusQualMapping[$qualifier];
-        } elseif (is_null($qualifier)) {
-            $status = $defaultStatus;
         } else {
-            $status = Result::STATUS_UNKNOWN;
+            $status = $defaultStatus;
         }
 
         return $status;
