@@ -11,7 +11,7 @@ class GetSlotListByPeriodOptions extends Base
     public $muCode;
 
     /** @var string код отделения */
-    public $deptCode;
+    public $depCode;
 
     /** @var string номер кабинета */
     public $snils;

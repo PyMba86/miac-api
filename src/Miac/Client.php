@@ -208,7 +208,7 @@ class Client extends Base
         RequestOptions\ReadFilteredSlotsStateOptions $options,
         $messageOptions = [])
     {
-        $msgName = "readFilteredSlotState";
+        $msgName = "readFilteredSlotsState";
         return $this->callMessage($msgName, $options, $messageOptions);
     }
 }

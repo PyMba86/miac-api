@@ -1,24 +1,22 @@
 <?php
 
-namespace Miac\Client\Message\GetSlotByPeriod;
+namespace Miac\Client\Message\GetSlotListByPeriod;
 
-
-use DateTime;
 
 class Period {
 
-    /** @var DateTime начальная дата периода */
+    /** @var string начальная дата периода */
     public $beginDate;
 
-    /** @var DateTime конечная дата периода */
+    /** @var string конечная дата периода */
     public $endDate;
 
     /**
      * Period constructor.
-     * @param DateTime $beginDate
-     * @param DateTime $endDate
+     * @param string $beginDate
+     * @param string $endDate
      */
-    public function __construct(DateTime $beginDate = null, DateTime $endDate = null)
+    public function __construct(string $beginDate = null, string $endDate = null)
     {
         $this->beginDate = $beginDate;
         $this->endDate = $endDate;

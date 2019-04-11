@@ -2,7 +2,7 @@
 
 namespace Miac\Client\Message;
 
-use Miac\Client\Message\GetSlotByPeriod\Period;
+use Miac\Client\Message\GetSlotListByPeriod\Period;
 use Miac\Client\RequestOptions\GetSlotListByPeriodOptions;
 
 /**
@@ -15,7 +15,7 @@ class GetSlotListByPeriod extends BaseWsMessage
     public $muCode;
 
     /** @var string код отделения */
-    public $deptCode;
+    public $depCode;
 
     /** @var string номер кабинета */
     public $snils;
@@ -36,7 +36,7 @@ class GetSlotListByPeriod extends BaseWsMessage
     public function __construct(GetSlotListByPeriodOptions $options)
     {
         $this->muCode = $options->muCode;
-        $this->deptCode = $options->deptCode;
+        $this->depCode = $options->depCode;
         $this->snils = $options->snils;
         $this->profCode = $options->profCode;
         $this->positionCode = $options->positionCode;
