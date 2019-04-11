@@ -9,7 +9,6 @@
       "email": "pymba-96@mail.ru"
     }
   ],
-  "minimum-stability": "stable",
   "type": "library",
   "require": {
     "php": ">=7.1",
