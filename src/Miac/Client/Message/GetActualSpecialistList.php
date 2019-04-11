@@ -10,7 +10,9 @@ use Miac\Client\RequestOptions\GetActualSpecialistListOptions;
  */
 class GetActualSpecialistList extends BaseWsMessage
 {
-    /** @var string код МО в системе ТФОМС */
+    /**
+     * @var string
+     */
     public $muCode;
 
     /**

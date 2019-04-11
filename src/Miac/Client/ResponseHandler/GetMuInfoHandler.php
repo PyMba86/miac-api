@@ -5,10 +5,10 @@ namespace Miac\Client\ResponseHandler;
 use Miac\Client\Session\Handler\SendResult;
 
 /**
- * Обработчик ответа UpdateMuInfo
+ * Обработчик ответа GetMuInfo
  * @package Miac\Client\ResponseHandler
  */
-class UpdateMuInfoHandler extends StandardResponseHandler
+class GetMuInfoHandler extends StandardResponseHandler
 {
 
     /**
