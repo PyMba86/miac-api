@@ -1,33 +1,31 @@
 ### Примеры запросов к МИАЦ
 
-.. contents::
-
 --------------------
 findDistrict
 --------------------
 
 Поиск участка по названиям адресных объектов
 
-.. code-block:: php
+```php
+use Miac\Client\RequestOptions\FindDistrictOptions;
 
-    use Miac\Client\RequestOptions\FindDistrictOptions;
-
-    $result = $client->findDistrict(new FindDistrictOptions([
-        'kladrCode' => '8600001000000',
-        'street' => 'УЛ. ИВАНА ЗАХАРОВА',
-        'houseNumer' => '23'
-    ]));
+$result = $client->findDistrict(new FindDistrictOptions([
+    'kladrCode' => '8600001000000',
+    'street' => 'УЛ. ИВАНА ЗАХАРОВА',
+    'houseNumer' => '23'
+]));
+```
 
 Поиск участка по базе ФИАС
 
-.. code-block:: php
+```php
+use Miac\Client\RequestOptions\FindDistrictOptions;
 
-    use Miac\Client\RequestOptions\FindDistrictOptions;
-
-    $result = $client->findDistrict(new FindDistrictOptions([
-          'addrobjFiasId' => 'f97cca9e-c425-4ad2-aeb2-2b646f805a33',
-          'houseFiasId' => 'f97cca9e-c425-4ad2-aeb2-2b646f805a33',
-    ]));
+$result = $client->findDistrict(new FindDistrictOptions([
+      'addrobjFiasId' => 'f97cca9e-c425-4ad2-aeb2-2b646f805a33',
+      'houseFiasId' => 'f97cca9e-c425-4ad2-aeb2-2b646f805a33',
+]));
+```
 
 --------------------
 getActualSpecialistList
@@ -35,13 +33,13 @@ getActualSpecialistList
 
 Получение списка специалистов МО
 
-.. code-block:: php
+```php
+use Miac\Client\RequestOptions\GetActualSpecialistListOptions;
 
-    use Miac\Client\RequestOptions\GetActualSpecialistListOptions;
-
-    $result = $client->getActualSpecialistList(new GetActualSpecialistListOptions([
-         'muCode' => '19123'
-    ]));
+$result = $client->getActualSpecialistList(new GetActualSpecialistListOptions([
+     'muCode' => '19123'
+]));
+```
 
 --------------------
 getMuInfo
@@ -49,14 +47,13 @@ getMuInfo
 
 Получить данные о МО
 
-.. code-block:: php
+```php
+use Miac\Client\RequestOptions\GetMuInfoOptions;
 
-    use Miac\Client\RequestOptions\GetMuInfoOptions;
-
-    $result = $client->getMuInfo(new GetMuInfoOptions([
-                'muCode' => '19123'
-            ]));
-
+$result = $client->getMuInfo(new GetMuInfoOptions([
+            'muCode' => '19123'
+        ]));
+```
 
 --------------------
 getScheduleInfo
@@ -64,89 +61,86 @@ getScheduleInfo
 
 Получить данные о расписании
 
-.. code-block:: php
+```php
+use Miac\Client\RequestOptions\GetScheduleInfoOptions;
 
-    use Miac\Client\RequestOptions\GetScheduleInfoOptions;
+$result = $client->getScheduleInfo(new GetScheduleInfoOptions([
+         'scheduleDate' => '2019-04-01',
+         'muCode' => '19123',
+         'needFIO' => true
 
-    $result = $client->getScheduleInfo(new GetScheduleInfoOptions([
-             'scheduleDate' => '2019-04-01',
-             'muCode' => '19123',
-             'needFIO' => true
- 
-       ]));
-       
+   ]));
+ ```      
 --------------------
 readFilteredSlotsState
 --------------------
 
 Прочитать состояние слотов, удовлетворяющих фильтру
 
-.. code-block:: php
+```php
+use Miac\Client\RequestOptions\ReadFilteredSlotsStateOptions;
 
-    use Miac\Client\RequestOptions\ReadFilteredSlotsStateOptions;
+$result = $client->readFilteredSlotState(new ReadFilteredSlotsStateOptions([
+    'scheduleDate' => '2019-04-01',
+    'muCode' => '19123',
+    'deptCode' => '19123',
+    'roomNumber' => '1',
+    'docCode' => '16067057157',
+    'specCode' => '27',
+    'positionCode' => '74',
+    'scheduleInfo' => '50_1',
+    'docFIO' => 'Колташева Александра Сергеевна',
+    'docSNILS' => '16067057157',
+    'needFIO' => true
 
-    $result = $client->readFilteredSlotState(new ReadFilteredSlotsStateOptions([
-        'scheduleDate' => '2019-04-01',
-        'muCode' => '19123',
-        'deptCode' => '19123',
-        'roomNumber' => '1',
-        'docCode' => '16067057157',
-        'specCode' => '27',
-        'positionCode' => '74',
-        'scheduleInfo' => '50_1',
-        'docFIO' => 'Колташева Александра Сергеевна',
-        'docSNILS' => '16067057157',
-        'needFIO' => true
-
-    ]));
- 
+]));
+ ```  
 --------------------
 getSlotListByPeriod
 --------------------
 
 Получение списка слотов за период
 
-.. code-block:: php
+```php
+use Miac\Client\RequestOptions\GetSlotListByPeriodOptions;
 
-    use Miac\Client\RequestOptions\GetSlotListByPeriodOptions;
-
-    $result = $client->getSlotListByPeriod(new GetSlotListByPeriodOptions([
-            'muCode' => '19123',
-            'depCode' => '19123',
-            'snils' => '16067057157',
-            'profCode' => '16067057157',
-            'positionCode' => '74',
-            'beginDate' => '2019-03-14',
-            'endDate' => '2019-04-03'
-      ]));
-
+$result = $client->getSlotListByPeriod(new GetSlotListByPeriodOptions([
+        'muCode' => '19123',
+        'depCode' => '19123',
+        'snils' => '16067057157',
+        'profCode' => '16067057157',
+        'positionCode' => '74',
+        'beginDate' => '2019-03-14',
+        'endDate' => '2019-04-03'
+  ]));
+ ``` 
+ 
 --------------------
 changeSlotState
 --------------------
 
 Изменить состояние слота
 
-.. code-block:: php
+```php
+use Miac\Client\RequestOptions\ChangeSlotStateOptions;
 
-    use Miac\Client\RequestOptions\ChangeSlotStateOptions;
-
-    $result = $client->changeSlotState(new ChangeSlotStateOptions([
-         'Lastname' => '19123',
-         'Firstname' => '19123',
-         'Middlename' => '16067057157',
-         'birthDate' => '2015-01-01',
-         'policyNumber' => '74',
-         'SNILS' => '12312312412',
-         'passportNumber' => '123321',
-         'passportSeries' => '1232',
-         'phone' => '213125123123',
-         'email' => '213125123123',
-         'gender' => '1',
-         'GUID' => '1',
-         'SlotState' => '2',
-         'status' => '1',
-         'slipNumber' => '1',
-         'appointmentSource' => '1',
-         'token' => '1',
-    ]));
-
+$result = $client->changeSlotState(new ChangeSlotStateOptions([
+     'Lastname' => '19123',
+     'Firstname' => '19123',
+     'Middlename' => '16067057157',
+     'birthDate' => '2015-01-01',
+     'policyNumber' => '74',
+     'SNILS' => '12312312412',
+     'passportNumber' => '123321',
+     'passportSeries' => '1232',
+     'phone' => '213125123123',
+     'email' => '213125123123',
+     'gender' => '1',
+     'GUID' => '1',
+     'SlotState' => '2',
+     'status' => '1',
+     'slipNumber' => '1',
+     'appointmentSource' => '1',
+     'token' => '1',
+]));
+ ``` 
