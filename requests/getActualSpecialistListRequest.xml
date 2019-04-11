@@ -1,8 +1,0 @@
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.hostco.ru/portal" xmlns:typ="http://www.hostco.ru/portal/types">
-    <soapenv:Header/>
-    <soapenv:Body>
-        <por:getActualSpecialistListRequest>
-            <typ:muCode>998</typ:muCode>
-        </por:getActualSpecialistListRequest>
-    </soapenv:Body>
-</soapenv:Envelope>
