@@ -74,10 +74,10 @@ class BaseTest extends BaseTestCase
         $responseHandler = new ResponseHandler\Base();
 
         $sendResult = new SendResult();
-        $sendResult->responseXml = $this->getTestFile('dummyUpdateMuInfoOkCodeResponse.xml');
+        $sendResult->responseXml = $this->getTestFile('dummyChangeSlotStateOkCodeResponse.xml');
 
         $result = $responseHandler->analyzeResponse($sendResult,
-            'updateMuInfo');
+            'changeSlotState');
 
         $this->assertEquals(Result::STATUS_OK, $result->status);
         $this->assertEquals(1, count($result->messages));
