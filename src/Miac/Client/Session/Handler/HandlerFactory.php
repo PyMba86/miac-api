@@ -16,7 +16,13 @@ class HandlerFactory
         if (!($handlerParams instanceof SessionHandlerParams))
             throw new \InvalidArgumentException('Invalid parameters');
 
-        return new SoapHeader($handlerParams);
+        if ($handlerParams->dummy) {
+            return new DummySoapHeader($handlerParams);
+        } else {
+            return new SoapHeader($handlerParams);
+        }
+
+
     }
 
 }

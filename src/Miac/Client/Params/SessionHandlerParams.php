@@ -41,6 +41,12 @@ class SessionHandlerParams
     public $overrideSoapClientWsdlName;
 
     /**
+     * Заглушка на ответ от сервера
+     * @var bool
+     */
+    public $dummy = false;
+
+    /**
      * @param array $params
      */
     public function __construct($params = [])
@@ -56,6 +62,7 @@ class SessionHandlerParams
     {
         $this->loadWsdl($params);
         $this->loadStateful($params);
+        $this->loadDummy($params);
         $this->loadOverrideSoapClient($params);
         $this->loadSoapClientOptions($params);
     }
@@ -83,6 +90,17 @@ class SessionHandlerParams
     protected function loadStateful($params)
     {
         $this->stateful = (isset($params['stateful'])) ? $params['stateful'] : true;
+    }
+
+    /**
+     * Load Dummy param from config
+     *
+     * @param array $params
+     * @return void
+     */
+    protected function loadDummy($params)
+    {
+        $this->dummy = (isset($params['dummy'])) ? $params['dummy'] : false;
     }
 
     /**
