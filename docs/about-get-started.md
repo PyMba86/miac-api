@@ -44,6 +44,27 @@ if ($result->status === Result::STATUS_OK) {
     echo "Получена стока XML: <pre>" . $result->responseXml . "</pre>";
 }
   ``` 
+
+## Тестирование клиента без сервера
+
+```php
+<?php
+
+use Miac\Client\Params;
+use Miac\Client\Result;
+
+//Настройка клиента для тестирование без запросов на сервер:
+
+$params = new Params([
+    'sessionHandlerParams' => [
+        'wsdl' => '', // Указывает на местоположение файла WSDL
+        'stateful' => true, //Включить сообщения о состоянии по умолчанию
+        'dummy' => true //Включить заглушки
+    ],
+    'requestCreatorParams' => []
+]);
+
+  ``` 
   
 ## Поддерживаемые сообщения
 
