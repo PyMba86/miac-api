@@ -1,0 +1,35 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <ns3:findDistrictResponse xmlns:ns3="http://www.hostco.ru/portal" xmlns:ns2="http://www.hostco.ru/portal/types"
+                                  xmlns="http://www.hostco.ru/types">
+            <ns2:district>
+                <ns2:muCode>19123</ns2:muCode>
+                <ns2:muTitle>БУ "Сургутская городская клиническая поликлиника №2"</ns2:muTitle>
+                <ns2:districtNumber>9</ns2:districtNumber>
+                <ns2:districtTypeId>2</ns2:districtTypeId>
+                <ns2:districtType>Педиатрический</ns2:districtType>
+                <ns2:doctor>
+                    <ns2:fio>Кузнецова Лариса Андреевна</ns2:fio>
+                    <ns2:position>врач-педиатр участковый</ns2:position>
+                    <ns2:snils>06331308524</ns2:snils>
+                    <ns2:specCode>1</ns2:specCode>
+                    <ns2:positionCode>47</ns2:positionCode>
+                </ns2:doctor>
+            </ns2:district>
+            <ns2:district>
+                <ns2:muCode>19123</ns2:muCode>
+                <ns2:muTitle>БУ "Сургутская городская клиническая поликлиника №2"</ns2:muTitle>
+                <ns2:districtNumber>27</ns2:districtNumber>
+                <ns2:districtTypeId>1</ns2:districtTypeId>
+                <ns2:districtType>Терапевтический</ns2:districtType>
+                <ns2:doctor>
+                    <ns2:fio>Товмасян Рипсиме Тиграновна</ns2:fio>
+                    <ns2:position>врач-терапевт участковый</ns2:position>
+                    <ns2:snils>11257394951</ns2:snils>
+                    <ns2:specCode>1</ns2:specCode>
+                    <ns2:positionCode>74</ns2:positionCode>
+                </ns2:doctor>
+            </ns2:district>
+        </ns3:findDistrictResponse>
+    </soap:Body>
+</soap:Envelope>

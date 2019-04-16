@@ -1,0 +1,10 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <ns3:readFilteredSlotsStateResponse xmlns:ns3="http://www.hostco.ru/portal" xmlns:ns2="http://www.hostco.ru/portal/types" xmlns="http://www.hostco.ru/types">
+            <slotInfo>
+                <GUID>959b0b96-7648-410e-ab4d-d1c50a9a203c</GUID>
+                <SlotState>1</SlotState>
+            </slotInfo>
+        </ns3:readFilteredSlotsStateResponse>
+    </soap:Body>
+</soap:Envelope>
