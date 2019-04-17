@@ -33,8 +33,8 @@ class Client extends Base
      * @param $messageOptions
      * @param bool $endSession
      * @return Client\Result
-     * @throws Client\InvalidMessageException
      * @throws Client\Exception
+     * @throws Client\InvalidMessageException
      */
     protected function callMessage(string $messageName, RequestOptionsInterface $options,
                                    $messageOptions, bool $endSession = false)

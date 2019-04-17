@@ -48,7 +48,7 @@ class Base implements RequestCreatorInterface
      * @throws InvalidArgumentException When invalid input is detected during message creation.
      * @return mixed the created request
      */
-    public function createRequest($messageName, RequestOptionsInterface $params)
+    public function createRequest(string $messageName, RequestOptionsInterface $params)
     {
         $builder = $this->findBuilderForMessage($messageName);
         if ($builder instanceof ConvertInterface) {
