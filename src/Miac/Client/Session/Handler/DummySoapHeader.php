@@ -5,40 +5,24 @@ namespace Miac\Client\Session\Handler;
 use Exception;
 use Miac\Client\Exception as ClientException;
 use Miac\Client\Message\BaseWsMessage;
+use Miac\Client\Params\SessionHandlerParams;
+use Miac\Client\Util\MsgBodyExtractor;
 use ReflectionClass;
+use SoapClient;
 use SoapFault;
 
-class DummySoapHeader extends Base {
+class DummySoapHeader implements HandlerInterface {
 
     /**
-     * @inheritdoc
+     * @var SessionHandlerParams
      */
-    protected function prepareForNextMessage($messageName, $messageOptions)
-    {
-        // TODO Установка soap заголовков
-    }
+    protected $params;
+
 
     /**
-     * @inheritdoc
+     * @var MsgBodyExtractor
      */
-    protected function handlePostMessage($messageName, $lastResponse, $messageOptions, $result)
-    {
-        // TODO Чтение заголовков после отправки
-    }
-
-    /**
-     * @inheritdoc
-     */
-    protected function makeSoapClientOptions()
-    {
-        $options = $this->soapClientOptions;
-        $options['classmap'] = array_merge(Classmap::$soapheader, Classmap::$map);
-        if (!empty($this->params->soapClientOptions)) {
-            $options = array_merge($options, $this->params->soapClientOptions);
-        }
-        return $options;
-    }
-
+    protected $extractor;
 
     /**
      * @inheritdoc
@@ -59,11 +43,14 @@ class DummySoapHeader extends Base {
         return true;
     }
 
+    /**
+     * @inheritdoc
+     * @throws ClientException
+     */
     public function sendMessage(string $messageName, BaseWsMessage $messageBody, $messageOptions): SendResult
     {
         $result = new SendResult();
 
-        $this->prepareForNextMessage($messageName, $messageOptions);
 
         try {
             $dummyResponse = $this->getDummyFile($messageName . 'Response.xml');
@@ -76,7 +63,6 @@ class DummySoapHeader extends Base {
 
             $result->responseObject = $xml;
 
-            $this->handlePostMessage($messageName, $dummyResponse, $messageOptions, $result);
 
             $result->responseXml = $this->extractor->extract($dummyResponse);
 
@@ -100,5 +86,58 @@ class DummySoapHeader extends Base {
         $path = dirname($reflector->getFileName());
         $fullPath = realpath($path . DIRECTORY_SEPARATOR . "dummy" . DIRECTORY_SEPARATOR . $fileName);
         return file_get_contents($fullPath);
+    }
+
+    /**
+     * HandlerInterface constructor.
+     * @param SessionHandlerParams $params
+     * @throws Exception
+     */
+    public function __construct(SessionHandlerParams $params)
+    {
+        $this->params = $params;
+        $this->setStateful($params->stateful);
+        $this->extractor = new MsgBodyExtractor();
+    }
+
+    /**
+     * Get the last raw XML message that was sent out
+     *
+     * @param string $msgName
+     * @return string|null
+     */
+    public function getLastRequest($msgName)
+    {
+       return null;
+    }
+
+    /**
+     * Get the last raw XML message that was received
+     *
+     * @return string|null
+     */
+    public function getLastResponse()
+    {
+        return null;
+    }
+
+    /**
+     * Get the request headers for the last SOAP message that was sent out
+     *
+     * @return string|null
+     */
+    public function getLastRequestHeaders()
+    {
+        return null;
+    }
+
+    /**
+     * Get the response headers for the last SOAP message that was received
+     *
+     * @return string|null
+     */
+    public function getLastResponseHeaders()
+    {
+        return null;
     }
 }
