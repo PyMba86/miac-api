@@ -7,7 +7,7 @@ class SlotInfo {
     /** @var string GUID слота */
     public $GUID;
 
-    /** @var string код состояния слота */
+    /** @var int код состояния слота */
     public $SlotState;
 
     /** @var PatientInfo параметры пациента */
@@ -16,10 +16,10 @@ class SlotInfo {
     /**
      * SlotInfo constructor.
      * @param string $GUID
-     * @param string $SlotState
+     * @param int $SlotState
      * @param PatientInfo $patientInfo
      */
-    public function __construct(string $GUID, string $SlotState, PatientInfo $patientInfo)
+    public function __construct(string $GUID, int $SlotState, PatientInfo $patientInfo)
     {
         $this->GUID = $GUID;
         $this->SlotState = $SlotState;

@@ -125,9 +125,9 @@ changeSlotState
 use Miac\Client\RequestOptions\ChangeSlotStateOptions;
 
 $result = $client->changeSlotState(new ChangeSlotStateOptions([
-     'Lastname' => '19123',
-     'Firstname' => '19123',
-     'Middlename' => '16067057157',
+     'Lastname' => 'Иванов',
+     'Firstname' => 'Иван',
+     'Middlename' => 'Иванович',
      'birthDate' => '2015-01-01',
      'policyNumber' => '74',
      'SNILS' => '12312312412',
@@ -135,12 +135,12 @@ $result = $client->changeSlotState(new ChangeSlotStateOptions([
      'passportSeries' => '1232',
      'phone' => '213125123123',
      'email' => '213125123123',
-     'gender' => '1',
+     'gender' => ChangeSlotStateOptions::GENDER_MALE,
      'GUID' => '1',
-     'SlotState' => '2',
-     'status' => '1',
+     'SlotState' => ChangeSlotStateOptions::STATE_OPEN,
+     'status' => ChangeSlotStateOptions::STATUS_ACTIVE,
      'slipNumber' => '1',
-     'appointmentSource' => '1',
+     'appointmentSource' => '5',
      'token' => '1',
 ]));
  ``` 

@@ -15,13 +15,13 @@ class ChangeSlotState extends BaseWsMessage
     /** @var SlotInfo слот */
     public $slotInfo;
 
-    /** @var string статус записи о приеме */
+    /** @var int статус записи о приеме */
     public $status;
 
     /** @var string номер кабинета */
     public $slipNumber;
 
-    /** @var string код врача */
+    /** @var int источник записи */
     public $appointmentSource;
 
     /** @var string код позиции */
