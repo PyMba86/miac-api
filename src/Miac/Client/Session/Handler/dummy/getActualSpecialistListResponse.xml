@@ -23,6 +23,34 @@
                                 <nearestDate>2019-04-23</nearestDate>
                                 <positionFrmrCode>59</positionFrmrCode>
                             </position>
+                            <position>
+                                <code>74</code>
+                                <name>врач-терапевт участковый</name>
+                                <nearestDate>2019-04-23</nearestDate>
+                                <positionFrmrCode>110</positionFrmrCode>
+                            </position>
+                        </positions>
+                    </department>
+                    <department>
+                        <deptCode>19123193</deptCode>
+                        <deptName>БУ СГКП №2 "ПОЛИКЛИНИКА ДЛЯ ВЗРОСЛЫХ"</deptName>
+                        <deptType>2</deptType>
+                        <deptAddress>628405, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 10/1</deptAddress>
+                        <deptPhone>+7(3462)21-11-23</deptPhone>
+                        <deleted>false</deleted>
+                        <positions>
+                            <position>
+                                <code>47</code>
+                                <name>врач-педиатр участковый</name>
+                                <nearestDate>2019-04-22</nearestDate>
+                                <positionFrmrCode>59</positionFrmrCode>
+                            </position>
+                            <position>
+                                <code>40</code>
+                                <name>врач общей практики (семейный врач)</name>
+                                <nearestDate>2019-04-24</nearestDate>
+                                <positionFrmrCode>49</positionFrmrCode>
+                            </position>
                         </positions>
                     </department>
                 </departments>
@@ -207,6 +235,22 @@
                             </position>
                         </positions>
                     </department>
+                    <department>
+                        <deptCode>191232133</deptCode>
+                        <deptName>БУ СГКП №2 "ПЕДИАТРИЧЕСКОЕ ОТДЕЛЕНИЕ №10"</deptName>
+                        <deptType>2</deptType>
+                        <deptAddress>628402, ХМАО-Югра, г Сургут, ул Калинина, д 25</deptAddress>
+                        <deptPhone>+7(3462)21-55-22</deptPhone>
+                        <deleted>false</deleted>
+                        <positions>
+                            <position>
+                                <code>47</code>
+                                <name>врач-педиатр участковый</name>
+                                <nearestDate>2019-04-17</nearestDate>
+                                <positionFrmrCode>59</positionFrmrCode>
+                            </position>
+                        </positions>
+                    </department>
                 </departments>
             </ns2:specialist>
             <ns2:specialist>
@@ -228,6 +272,12 @@
                                 <name>врач-оториноларинголог</name>
                                 <nearestDate>2019-04-29</nearestDate>
                                 <positionFrmrCode>53</positionFrmrCode>
+                            </position>
+                            <position>
+                                <code>40</code>
+                                <name>врач общей практики (семейный врач)</name>
+                                <nearestDate>2019-04-25</nearestDate>
+                                <positionFrmrCode>49</positionFrmrCode>
                             </position>
                         </positions>
                     </department>
@@ -725,6 +775,28 @@
                             </position>
                         </positions>
                     </department>
+                    <department>
+                        <deptCode>19123193</deptCode>
+                        <deptName>БУ СГКП №2 "ПОЛИКЛИНИКА ДЛЯ ВЗРОСЛЫХ"</deptName>
+                        <deptType>2</deptType>
+                        <deptAddress>628405, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 10/1</deptAddress>
+                        <deptPhone>+7(3462)21-11-23</deptPhone>
+                        <deleted>false</deleted>
+                        <positions>
+                            <position>
+                                <code>47</code>
+                                <name>врач-педиатр участковый</name>
+                                <nearestDate>2019-04-22</nearestDate>
+                                <positionFrmrCode>59</positionFrmrCode>
+                            </position>
+                            <position>
+                                <code>40</code>
+                                <name>врач общей практики (семейный врач)</name>
+                                <nearestDate>2019-04-24</nearestDate>
+                                <positionFrmrCode>49</positionFrmrCode>
+                            </position>
+                        </positions>
+                    </department>
                 </departments>
             </ns2:specialist>
             <ns2:specialist>
@@ -826,6 +898,12 @@
                                 <name>врач-педиатр участковый</name>
                                 <nearestDate>2019-04-22</nearestDate>
                                 <positionFrmrCode>59</positionFrmrCode>
+                            </position>
+                            <position>
+                                <code>74</code>
+                                <name>врач-терапевт участковый</name>
+                                <nearestDate>2019-04-23</nearestDate>
+                                <positionFrmrCode>110</positionFrmrCode>
                             </position>
                         </positions>
                     </department>
