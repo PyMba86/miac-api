@@ -142,12 +142,12 @@ class DummyClientTest extends BaseTestCase
             'passportSeries' => '1232',
             'phone' => '213125123123',
             'email' => '213125123123',
-            'gender' => '1',
+            'gender' => ChangeSlotStateOptions::GENDER_MALE,
             'GUID' => '1',
-            'SlotState' => '2',
-            'status' => '1',
+            'SlotState' => ChangeSlotStateOptions::STATE_OPEN,
+            'status' => ChangeSlotStateOptions::STATUS_ACTIVE,
             'slipNumber' => '1',
-            'appointmentSource' => '1',
+            'appointmentSource' => 5,
             'token' => '1',
         ]));
 

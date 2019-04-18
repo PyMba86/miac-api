@@ -39,7 +39,7 @@ class PatientInfo {
     /** @var string  адрес электронной почты*/
     public $email;
 
-    /** @var string пол */
+    /** @var int пол */
     public $gender;
 
 }
