@@ -58,7 +58,7 @@ class DummySoapHeader implements HandlerInterface {
             $xml = $this->extractor->extract($dummyResponse);
 
             $xml = preg_replace("/(<\/?)(\w+)*([^>]*>)/", "$1$2$3", $xml);
-            $xml = preg_replace("/(\w+):([^>]*)/m", "$2", $xml);
+            $xml = preg_replace("/([a-zA-Z]+)([0-9]+):([^>]*)/m", "$3", $xml);
             $xml = simplexml_load_string($xml);
 
             $result->responseObject = $xml;
