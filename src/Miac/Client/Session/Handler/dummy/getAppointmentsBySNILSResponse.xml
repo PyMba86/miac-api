@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <ns3:getAppointmentsBySNILSResponse xmlns:ns3="http://www.hostco.ru/portal" xmlns:ns2="http://www.hostco.ru/portal/types" xmlns="http://www.hostco.ru/types">
+         <ns2:Appointment>
+            <timeInterval>
+               <timeStart>09:00:00Z</timeStart>
+               <timeFinish>09:01:00Z</timeFinish>
+            </timeInterval>
+            <slotType>2</slotType>
+            <slotInfo>
+               <GUID>19121_245259</GUID>
+               <SlotState>2</SlotState>
+            </slotInfo>
+            <appointment>
+               <slipNumber>z245259</slipNumber>
+               <appointmentSource>2</appointmentSource>
+               <appointmentStatus>1</appointmentStatus>
+            </appointment>
+            <appointmentDate>2017-02-27</appointmentDate>
+            <muName>БУ "Сургутский клинический кожно-венерологический диспансер"</muName>
+            <muAddress>628403, ХМАО-Югра, г. Сургут, УЛ. БЕРЕГОВАЯ, 70</muAddress>
+            <docPosition>врач-дерматовенеролог</docPosition>
+            <docFIO>Иванова Елена Викторовна</docFIO>
+         </ns2:Appointment>
+         <ns2:Appointment>
+            <timeInterval>
+               <timeStart>15:28:00Z</timeStart>
+               <timeFinish>15:44:00Z</timeFinish>
+            </timeInterval>
+            <slotType>2</slotType>
+            <slotInfo>
+               <GUID>723a5422-cdc7-4526-b04e-706ea62892d8</GUID>
+               <SlotState>2</SlotState>
+            </slotInfo>
+            <appointment>
+               <slipNumber>4219576</slipNumber>
+               <appointmentSource>1</appointmentSource>
+               <appointmentStatus>1</appointmentStatus>
+            </appointment>
+            <appointmentDate>2016-09-09</appointmentDate>
+            <muName>БУ "Сургутская городская клиническая поликлиника №4"</muName>
+            <muAddress>628415, ХМАО-Югра, г Сургут, ул Игоря Киртбая, д 12Д, д. 12</muAddress>
+            <docPosition>врач-оториноларинголог</docPosition>
+            <docFIO>Муратова Наталья Владимировна</docFIO>
+         </ns2:Appointment>
+         <ns2:Appointment>
+            <timeInterval>
+               <timeStart>16:10:00Z</timeStart>
+               <timeFinish>16:20:00Z</timeFinish>
+            </timeInterval>
+            <slotType>2</slotType>
+            <slotInfo>
+               <GUID>30f18a1d-e3e1-46fc-a6c0-a3af37e93af2</GUID>
+               <SlotState>2</SlotState>
+            </slotInfo>
+            <appointment>
+               <slipNumber>3241395</slipNumber>
+               <appointmentSource>1</appointmentSource>
+               <appointmentStatus>1</appointmentStatus>
+            </appointment>
+            <appointmentDate>2016-08-09</appointmentDate>
+            <muName>БУ "Сургутская городская стоматологическая поликлиника №1"</muName>
+            <muAddress>628416, ХМАО-Югра, г Сургут, ул Григория Кукуевицкого, д 8</muAddress>
+            <docPosition>врач-стоматолог-хирург</docPosition>
+            <docFIO>Карпов Иван Николаевич</docFIO>
+         </ns2:Appointment>
+         <ns2:Appointment>
+            <timeInterval>
+               <timeStart>09:12:00Z</timeStart>
+               <timeFinish>09:30:00Z</timeFinish>
+            </timeInterval>
+            <slotType>2</slotType>
+            <slotInfo>
+               <GUID>2133269</GUID>
+               <SlotState>2</SlotState>
+            </slotInfo>
+            <appointment>
+               <slipNumber>113423700</slipNumber>
+               <appointmentSource>2</appointmentSource>
+               <appointmentStatus>1</appointmentStatus>
+            </appointment>
+            <appointmentDate>2015-05-23</appointmentDate>
+            <muName>БУ "Окружной кардиологический диспансер "Центр диагностики и сердечно-сосудистой хирургии"</muName>
+            <muAddress>628415, ХМАО-Югра, г. Сургут, пр. Ленина, д.69/1</muAddress>
+            <docPosition>врач-кардиолог</docPosition>
+            <docFIO>Галеева Гульнара Минахметовна</docFIO>
+         </ns2:Appointment>
+      </ns3:getAppointmentsBySNILSResponse>
+   </soap:Body>
+</soap:Envelope>

@@ -144,3 +144,17 @@ $result = $client->changeSlotState(new ChangeSlotStateOptions([
      'token' => '1',
 ]));
  ``` 
+ 
+ --------------------
+ getAppointmentsBySNILS
+ --------------------
+ 
+Получение записей пациента по СНИЛС
+ 
+ ```php
+ use Miac\Client\RequestOptions\GetAppointmentsBySNILSOptions;
+ 
+ $result = $client->getAppointmentsBySNILS(new GetAppointmentsBySNILSOptions([
+            'snils' => '12956840697'
+        ]));
+  ``` 

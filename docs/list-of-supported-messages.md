@@ -9,3 +9,4 @@
 - getSlotListByPeriod
 - readFilteredSlotsState
 - changeSlotState
+- getAppointmentsBySNILS

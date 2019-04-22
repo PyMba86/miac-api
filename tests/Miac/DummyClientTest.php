@@ -7,6 +7,7 @@ use Miac\Client\Params;
 use Miac\Client\RequestOptions\ChangeSlotStateOptions;
 use Miac\Client\RequestOptions\FindDistrictOptions;
 use Miac\Client\RequestOptions\GetActualSpecialistListOptions;
+use Miac\Client\RequestOptions\GetAppointmentsBySNILSOptions;
 use Miac\Client\RequestOptions\GetMuInfoOptions;
 use Miac\Client\RequestOptions\GetScheduleInfoOptions;
 use Miac\Client\RequestOptions\GetSlotListByPeriodOptions;
@@ -240,6 +241,31 @@ class DummyClientTest extends BaseTestCase
             'scheduleDate' => '2019-04-17',
             'muCode' => '19123',
             'positionCode' => '91',
+        ]));
+
+        $this->assertEquals(Result::STATUS_OK, $result->status);
+        $this->assertEquals(0, count($result->messages));
+        $this->assertEquals(true, isset($result->response));
+    }
+
+    /**
+     * @throws Client\Exception
+     * @throws Client\InvalidMessageException
+     */
+    public function testCanClientWithDummyGetAppointmentsBySNILS()
+    {
+        $params = new Params([
+            'sessionHandlerParams' => [
+                'stateful' => true,
+                'wsdl' => $this->makePathToDummyWSDL(),
+                'dummy' => true
+            ],
+            'requestCreatorParams' => []
+        ]);
+        $client = new Client($params);
+
+        $result = $client->getAppointmentsBySNILS(new GetAppointmentsBySNILSOptions([
+            'snils' => '12956840697'
         ]));
 
         $this->assertEquals(Result::STATUS_OK, $result->status);

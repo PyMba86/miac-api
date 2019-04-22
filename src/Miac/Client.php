@@ -211,4 +211,21 @@ class Client extends Base
         $msgName = "readFilteredSlotsState";
         return $this->callMessage($msgName, $options, $messageOptions);
     }
+
+    /**
+     * GetAppointmentsBySNILS
+     *
+     * @param RequestOptions\GetAppointmentsBySNILSOptions $options
+     * @param array $messageOptions
+     * @return Client\Result
+     * @throws Client\Exception
+     * @throws Client\InvalidMessageException
+     */
+    public function getAppointmentsBySNILS(
+        RequestOptions\GetAppointmentsBySNILSOptions $options,
+        $messageOptions = [])
+    {
+        $msgName = "getAppointmentsBySNILS";
+        return $this->callMessage($msgName, $options, $messageOptions);
+    }
 }
