@@ -17,7 +17,7 @@ class GetSlotListByPeriod extends BaseWsMessage
     /** @var string код отделения */
     public $depCode;
 
-    /** @var string номер кабинета */
+    /** @var string снилс врача */
     public $snils;
 
     /** @var string код врача */
