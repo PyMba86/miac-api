@@ -13,28 +13,20 @@ use Miac\Client\RequestOptions\GetScheduleInfoOptions;
 use Miac\Client\RequestOptions\GetSlotListByPeriodOptions;
 use Miac\Client\RequestOptions\ReadFilteredSlotsStateOptions;
 use Miac\Client\Result;
+use Miac\PortalClient;
 
-class DummyClientTest extends BaseTestCase
+class PortalDummyClientTest extends BaseTestCase
 {
-    protected function makePathToDummyWSDL()
-    {
-        return realpath(
-            dirname(__FILE__).DIRECTORY_SEPARATOR."Client".
-            DIRECTORY_SEPARATOR."testfiles".DIRECTORY_SEPARATOR."portal.wsdl"
-        );
-    }
-
     public function testCanCreateClient()
     {
         $params = new Params([
             'sessionHandlerParams' => [
                 'stateful' => true,
-                'wsdl' => $this->makePathToDummyWSDL(),
                 'dummy' => true
             ],
             'requestCreatorParams' => []
         ]);
-        $client = new Client($params);
+        $client = new PortalClient($params);
         $this->assertTrue($client->isStateful());
     }
 
@@ -47,12 +39,11 @@ class DummyClientTest extends BaseTestCase
         $params = new Params([
             'sessionHandlerParams' => [
                 'stateful' => true,
-                'wsdl' => $this->makePathToDummyWSDL(),
                 'dummy' => true
             ],
             'requestCreatorParams' => []
         ]);
-        $client = new Client($params);
+        $client = new PortalClient($params);
 
         $result = $client->getActualSpecialistList(new GetActualSpecialistListOptions([
             'muCode' => '19123'
@@ -72,12 +63,11 @@ class DummyClientTest extends BaseTestCase
         $params = new Params([
             'sessionHandlerParams' => [
                 'stateful' => true,
-                'wsdl' => $this->makePathToDummyWSDL(),
                 'dummy' => true
             ],
             'requestCreatorParams' => []
         ]);
-        $client = new Client($params);
+        $client = new PortalClient($params);
 
         $result = $client->findDistrict(new FindDistrictOptions([
             'kladrCode' => '8600001000000',
@@ -99,12 +89,11 @@ class DummyClientTest extends BaseTestCase
         $params = new Params([
             'sessionHandlerParams' => [
                 'stateful' => true,
-                'wsdl' => $this->makePathToDummyWSDL(),
                 'dummy' => true
             ],
             'requestCreatorParams' => []
         ]);
-        $client = new Client($params);
+        $client = new PortalClient($params);
 
         $result = $client->getMuInfo(new GetMuInfoOptions([
             'muCode' => '19123'
@@ -124,14 +113,12 @@ class DummyClientTest extends BaseTestCase
         $params = new Params([
             'sessionHandlerParams' => [
                 'stateful' => true,
-                'wsdl' => $this->makePathToDummyWSDL(),
                 'dummy' => true
             ],
             'requestCreatorParams' => []
         ]);
-        $client = new Client($params);
+        $client = new PortalClient($params);
 
-        // TODO Параметры не актуальные
         $result = $client->changeSlotState(new ChangeSlotStateOptions([
             'Lastname' => '19123',
             'Firstname' => '19123',
@@ -168,12 +155,11 @@ class DummyClientTest extends BaseTestCase
         $params = new Params([
             'sessionHandlerParams' => [
                 'stateful' => true,
-                'wsdl' => $this->makePathToDummyWSDL(),
                 'dummy' => true
             ],
             'requestCreatorParams' => []
         ]);
-        $client = new Client($params);
+        $client = new PortalClient($params);
 
         $result = $client->getSlotListByPeriod(new GetSlotListByPeriodOptions([
             'muCode' => '19123',
@@ -199,12 +185,11 @@ class DummyClientTest extends BaseTestCase
         $params = new Params([
             'sessionHandlerParams' => [
                 'stateful' => true,
-                'wsdl' => $this->makePathToDummyWSDL(),
                 'dummy' => true
             ],
             'requestCreatorParams' => []
         ]);
-        $client = new Client($params);
+        $client = new PortalClient($params);
 
         $result = $client->readFilteredSlotState(new ReadFilteredSlotsStateOptions([
             'scheduleDate' => '2019-04-17',
@@ -230,12 +215,11 @@ class DummyClientTest extends BaseTestCase
         $params = new Params([
             'sessionHandlerParams' => [
                 'stateful' => true,
-                'wsdl' => $this->makePathToDummyWSDL(),
                 'dummy' => true
             ],
             'requestCreatorParams' => []
         ]);
-        $client = new Client($params);
+        $client = new PortalClient($params);
 
         $result = $client->getScheduleInfo(new GetScheduleInfoOptions([
             'scheduleDate' => '2019-04-17',
@@ -257,12 +241,11 @@ class DummyClientTest extends BaseTestCase
         $params = new Params([
             'sessionHandlerParams' => [
                 'stateful' => true,
-                'wsdl' => $this->makePathToDummyWSDL(),
                 'dummy' => true
             ],
             'requestCreatorParams' => []
         ]);
-        $client = new Client($params);
+        $client = new PortalClient($params);
 
         $result = $client->getAppointmentsBySNILS(new GetAppointmentsBySNILSOptions([
             'snils' => '12956840697'
