@@ -5,8 +5,9 @@ namespace Test\Miac;
 use Miac\Client;
 use Miac\Client\Params;
 use Miac\Client\RequestOptions\GetActualSpecialistListOptions;
+use Miac\PortalClient;
 
-class ClientTest extends BaseTestCase
+class PortalClientTest extends BaseTestCase
 {
     protected function makePathToDummyWSDL()
     {
@@ -25,7 +26,7 @@ class ClientTest extends BaseTestCase
             ],
             'requestCreatorParams' => []
         ]);
-        $client = new Client($params);
+        $client = new PortalClient($params);
         $this->assertTrue($client->isStateful());
     }
 
@@ -40,7 +41,7 @@ class ClientTest extends BaseTestCase
             'responseHandler' => $this->getMockBuilder('Miac\Client\ResponseHandler\ResponseHandlerInterface')->getMock()
         ]);
 
-        $client = new Client($params);
+        $client = new PortalClient($params);
 
         $this->assertInstanceOf('Miac\Client\Session\Handler\HandlerInterface', $params->sessionHandler);
         $this->assertInstanceOf('Miac\Client\RequestCreator\RequestCreatorInterface', $params->requestCreator);
@@ -95,7 +96,7 @@ class ClientTest extends BaseTestCase
         $par->sessionHandler = $mockSessionHandler;
         $par->requestCreatorParams = new Params\RequestCreatorParams([]);
         $par->responseHandler = $mockResponseHandler;
-        $client = new Client($par);
+        $client = new PortalClient($par);
         $response = $client->getActualSpecialistList(
             new Client\RequestOptions\GetActualSpecialistListOptions([
                 'muCode' => '2019'

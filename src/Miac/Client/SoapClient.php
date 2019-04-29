@@ -58,7 +58,7 @@ class SoapClient extends \SoapClient
         $processor->importStylesheet($xslt);
         $transform = $processor->transformToXml($dom);
 
-        if ($transform === false) {
+        if ($transform === false || $transform === null) {
             $newRequest = $request;
         } else {
             $newDom = new \DOMDocument('1.0', 'UTF-8');

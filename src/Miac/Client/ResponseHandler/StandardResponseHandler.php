@@ -2,6 +2,7 @@
 
 namespace Miac\Client\ResponseHandler;
 
+use const Grpc\STATUS_OK;
 use Miac\Client\Exception;
 use Miac\Client\Result;
 use Miac\Client\Session\Handler\SendResult;
@@ -42,6 +43,20 @@ abstract class StandardResponseHandler implements MessageResponseHandler
 
         return $analyzeResponse;
     }
+
+    /**
+     * Анализирует ответ
+     *
+     * @param SendResult $response
+     * @return Result
+     */
+    protected function analyzeSimpleResponseMessage(SendResult $response)
+    {
+        $analyzeResponse = new Result($response);
+        $analyzeResponse->status = Result::STATUS_OK;
+        return $analyzeResponse;
+    }
+
 
 
     /**
