@@ -2,6 +2,8 @@
 
 Это список сообщений, которые поддерживаются на данный момент
 
+### PortalClient
+
 - findDistrict
 - getActualSpecialistList
 - getMuInfo
@@ -10,3 +12,9 @@
 - readFilteredSlotsState
 - changeSlotState
 - getAppointmentsBySNILS
+
+### NsiClient
+
+- getRefBookList
+- getRefBookPartial
+- getRefBookParts

@@ -1,7 +1,7 @@
 ### Примеры запросов к МИАЦ
 
 --------------------
-findDistrict
+PortalClient : findDistrict
 --------------------
 
 Поиск участка по названиям адресных объектов
@@ -28,7 +28,7 @@ $result = $client->findDistrict(new FindDistrictOptions([
 ```
 
 --------------------
-getActualSpecialistList
+PortalClient : getActualSpecialistList
 --------------------
 
 Получение списка специалистов МО
@@ -42,7 +42,7 @@ $result = $client->getActualSpecialistList(new GetActualSpecialistListOptions([
 ```
 
 --------------------
-getMuInfo
+PortalClient : getMuInfo
 --------------------
 
 Получить данные о МО
@@ -56,7 +56,7 @@ $result = $client->getMuInfo(new GetMuInfoOptions([
 ```
 
 --------------------
-getScheduleInfo
+PortalClient : getScheduleInfo
 --------------------
 
 Получить данные о расписании
@@ -72,7 +72,7 @@ $result = $client->getScheduleInfo(new GetScheduleInfoOptions([
    ]));
  ```      
 --------------------
-readFilteredSlotsState
+PortalClient : readFilteredSlotsState
 --------------------
 
 Прочитать состояние слотов, удовлетворяющих фильтру
@@ -96,7 +96,7 @@ $result = $client->readFilteredSlotState(new ReadFilteredSlotsStateOptions([
 ]));
  ```  
 --------------------
-getSlotListByPeriod
+PortalClient : getSlotListByPeriod
 --------------------
 
 Получение списка слотов за период
@@ -116,7 +116,7 @@ $result = $client->getSlotListByPeriod(new GetSlotListByPeriodOptions([
  ``` 
  
 --------------------
-changeSlotState
+PortalClient : changeSlotState
 --------------------
 
 Изменить состояние слота
@@ -146,7 +146,7 @@ $result = $client->changeSlotState(new ChangeSlotStateOptions([
  ``` 
  
  --------------------
- getAppointmentsBySNILS
+ PortalClient : getAppointmentsBySNILS
  --------------------
  
 Получение записей пациента по СНИЛС
@@ -156,5 +156,48 @@ $result = $client->changeSlotState(new ChangeSlotStateOptions([
  
  $result = $client->getAppointmentsBySNILS(new GetAppointmentsBySNILSOptions([
             'snils' => '12956840697'
+        ]));
+  ``` 
+  
+ --------------------
+ NsiClient : getRefBookList
+ --------------------
+ 
+Получение списка справочников
+ 
+ ```php
+ use Miac\Client\RequestOptions\GetRefBookListOptions;
+ 
+$result = $client->getRefBookList(new GetRefBookListOptions([]));
+  ``` 
+  
+ --------------------
+ NsiClient : getRefBookParts
+ --------------------
+ 
+Возвращает количество частей справочника
+ 
+ ```php
+ use Miac\Client\RequestOptions\GetRefBookPartsOptions;
+ 
+$result = $client->getRefBookParts(new GetRefBookPartsOptions([
+        'code' => 'MDP365',
+        'version' => '1.2'
+    ]));
+  ``` 
+  
+ --------------------
+ NsiClient : getRefBookPartial
+ --------------------
+ 
+Возвращает массив записей справочника
+ 
+ ```php
+ use Miac\Client\RequestOptions\GetRefBookPartialOptions;
+ 
+     $result = $client->getRefBookPartial(new GetRefBookPartialOptions([
+            'code' => 'MDP365',
+            'version' => '1.2',
+            'part' => '1'
         ]));
   ``` 

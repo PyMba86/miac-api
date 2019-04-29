@@ -13,12 +13,17 @@
  
 ## Настройте клиент
 
-Пример настройки клиента:
+#### Список доступных клиентов:
+
+- PortalClient : Сервис портала по приему данных от МО
+- NsiClient : Сервис НСИ
+
+Пример настройки клиента(PortalClient):
 
 ```php
 <?php
 
-use Miac\Client;
+use Miac\PortalClient;
 use Miac\Client\Params;
 use Miac\Client\Result;
 use Miac\Client\RequestOptions\GetActualSpecialistListOptions;
@@ -33,7 +38,7 @@ $params = new Params([
     'requestCreatorParams' => []
 ]);
 
-$client = new Client($params);
+$client = new PortalClient($params);
 
 $result = $client->getActualSpecialistList(new GetActualSpecialistListOptions([
     'muCode' => '19123'

@@ -16,6 +16,6 @@ class GetRefBookPartsHandler extends StandardResponseHandler
      */
     public function analyze(SendResult $response)
     {
-        return $this->analyzeSimpleResponseErrorCodeAndMessage($response);
+        return $this->analyzeSimpleResponseMessage($response);
     }
 }
