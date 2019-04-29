@@ -4,17 +4,8 @@ namespace Test\Miac;
 
 use Miac\Client;
 use Miac\Client\Params;
-use Miac\Client\RequestOptions\ChangeSlotStateOptions;
-use Miac\Client\RequestOptions\FindDistrictOptions;
-use Miac\Client\RequestOptions\GetActualSpecialistListOptions;
-use Miac\Client\RequestOptions\GetAppointmentsBySNILSOptions;
-use Miac\Client\RequestOptions\GetMuInfoOptions;
-use Miac\Client\RequestOptions\GetScheduleInfoOptions;
-use Miac\Client\RequestOptions\GetSlotListByPeriodOptions;
-use Miac\Client\RequestOptions\ReadFilteredSlotsStateOptions;
 use Miac\Client\Result;
 use Miac\NsiClient;
-use Miac\PortalClient;
 
 class NsiDummyClientTest extends BaseTestCase
 {
