@@ -2,1088 +2,615 @@
     <soap:Body>
         <ns3:getActualSpecialistListResponse xmlns:ns3="http://www.hostco.ru/portal" xmlns:ns2="http://www.hostco.ru/portal/types" xmlns="http://www.hostco.ru/types">
             <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>16871295609</profCode>
-                <snils>16871295609</snils>
-                <lastName>Эркабаева</lastName>
-                <firstName>Рахима</firstName>
-                <middleName>Тахировна</middleName>
+                <muCode>21126</muCode>
+                <profCode>21126844090</profCode>
+                <snils>04244298343</snils>
+                <lastName>Соколова</lastName>
+                <firstName>Анна</firstName>
+                <middleName>Валерьевна</middleName>
                 <departments>
                     <department>
-                        <deptCode>19123180</deptCode>
-                        <deptName>БУ СГКП №2 "ДЕТСКАЯ ПОЛИКЛИНИКА"</deptName>
+                        <deptCode>132364</deptCode>
+                        <deptName>Детская поликлиника</deptName>
                         <deptType>2</deptType>
-                        <deptAddress>628400, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 16</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
+                        <deptAddress>628012, ХМАО-Югра, г. Ханты-Мансийск, ул. Калинина, д. 40</deptAddress>
+                        <deptPhone>+7 (3467) 390-069, 332-450, 390-392</deptPhone>
                         <deleted>false</deleted>
                         <positions>
                             <position>
-                                <code>47</code>
-                                <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-23</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
-                            </position>
-                            <position>
-                                <code>74</code>
-                                <name>врач-терапевт участковый</name>
-                                <nearestDate>2019-04-23</nearestDate>
-                                <positionFrmrCode>110</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                    <department>
-                        <deptCode>19123193</deptCode>
-                        <deptName>БУ СГКП №2 "ПОЛИКЛИНИКА ДЛЯ ВЗРОСЛЫХ"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628405, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 10/1</deptAddress>
-                        <deptPhone>+7(3462)21-11-23</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>47</code>
-                                <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-22</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
-                            </position>
-                            <position>
-                                <code>40</code>
-                                <name>врач общей практики (семейный врач)</name>
-                                <nearestDate>2019-04-24</nearestDate>
-                                <positionFrmrCode>49</positionFrmrCode>
+                                <code>168</code>
+                                <name>медицинский психолог</name>
+                                <nearestDate>2019-06-18</nearestDate>
                             </position>
                         </positions>
                     </department>
                 </departments>
             </ns2:specialist>
             <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>13164974666</profCode>
-                <snils>13164974666</snils>
-                <lastName>Гаджиханова</lastName>
-                <firstName>Ажей</firstName>
-                <middleName>Шарапутдиновна</middleName>
+                <muCode>21126</muCode>
+                <profCode>21126117359608</profCode>
+                <snils>12503774839</snils>
+                <lastName>Реверчук</lastName>
+                <firstName>Татьяна</firstName>
+                <middleName>Ивановна</middleName>
                 <departments>
                     <department>
-                        <deptCode>19123193</deptCode>
-                        <deptName>БУ СГКП №2 "ПОЛИКЛИНИКА ДЛЯ ВЗРОСЛЫХ"</deptName>
+                        <deptCode>132364</deptCode>
+                        <deptName>Детская поликлиника</deptName>
                         <deptType>2</deptType>
-                        <deptAddress>628405, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 10/1</deptAddress>
-                        <deptPhone>+7(3462)21-11-23</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>74</code>
-                                <name>врач-терапевт участковый</name>
-                                <nearestDate>2019-04-23</nearestDate>
-                                <positionFrmrCode>110</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>15266049159</profCode>
-                <snils>15266049159</snils>
-                <lastName>Илипаева</lastName>
-                <firstName>Нуржамал</firstName>
-                <middleName>Аскаровна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>191232133</deptCode>
-                        <deptName>БУ СГКП №2 "ПЕДИАТРИЧЕСКОЕ ОТДЕЛЕНИЕ №3"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628402, ХМАО-Югра, г Сургут, ул Мелик-Карамова, д 4</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>47</code>
-                                <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-17</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>17369694529</profCode>
-                <snils>17369694529</snils>
-                <lastName>Рахимова</lastName>
-                <firstName>Вероника</firstName>
-                <middleName>Витальевна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>19123193</deptCode>
-                        <deptName>БУ СГКП №2 "ПОЛИКЛИНИКА ДЛЯ ВЗРОСЛЫХ"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628405, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 10/1</deptAddress>
-                        <deptPhone>+7(3462)21-11-23</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>74</code>
-                                <name>врач-терапевт участковый</name>
-                                <nearestDate>2019-04-24</nearestDate>
-                                <positionFrmrCode>110</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>12608945771</profCode>
-                <snils>12608945771</snils>
-                <lastName>Гаджиахмедова</lastName>
-                <firstName>Зумрият</firstName>
-                <middleName>Халирбагимовна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>19123180</deptCode>
-                        <deptName>БУ СГКП №2 "ДЕТСКАЯ ПОЛИКЛИНИКА"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628400, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 16</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>47</code>
-                                <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-18</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>14146914856</profCode>
-                <snils>14146914856</snils>
-                <lastName>Семенова</lastName>
-                <firstName>Туяна</firstName>
-                <middleName>Мункожаргаловна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>19123180</deptCode>
-                        <deptName>БУ СГКП №2 "ДЕТСКАЯ ПОЛИКЛИНИКА"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628400, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 16</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
+                        <deptAddress>628012, ХМАО-Югра, г. Ханты-Мансийск, ул. Калинина, д. 40</deptAddress>
+                        <deptPhone>+7 (3467) 390-069, 332-450, 390-392</deptPhone>
                         <deleted>false</deleted>
                         <positions>
                             <position>
                                 <code>28</code>
                                 <name>врач-инфекционист</name>
-                                <nearestDate>2019-04-18</nearestDate>
-                                <positionFrmrCode>33</positionFrmrCode>
+                                <nearestDate>2019-06-10</nearestDate>
                             </position>
                         </positions>
                     </department>
                 </departments>
             </ns2:specialist>
             <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>05860509675</profCode>
-                <snils>05860509675</snils>
-                <lastName>Тарасова</lastName>
-                <firstName>Галина</firstName>
-                <middleName>Васильевна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>19123180</deptCode>
-                        <deptName>БУ СГКП №2 "ДЕТСКАЯ ПОЛИКЛИНИКА"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628400, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 16</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>60</code>
-                                <name>врач-пульмонолог</name>
-                                <nearestDate>2019-04-17</nearestDate>
-                                <positionFrmrCode>90</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>13476849600</profCode>
-                <snils>13476849600</snils>
-                <lastName>Игуминова</lastName>
-                <firstName>Кристина</firstName>
+                <muCode>21126</muCode>
+                <profCode>21126189568846</profCode>
+                <snils>13795087098</snils>
+                <lastName>Тихонова</lastName>
+                <firstName>Елена</firstName>
                 <middleName>Владимировна</middleName>
                 <departments>
                     <department>
-                        <deptCode>191232133</deptCode>
-                        <deptName>БУ СГКП №2 "ПЕДИАТРИЧЕСКОЕ ОТДЕЛЕНИЕ №3"</deptName>
+                        <deptCode>339486</deptCode>
+                        <deptName>Детская поликлиника. Участок №22</deptName>
                         <deptType>2</deptType>
-                        <deptAddress>628402, ХМАО-Югра, г Сургут, ул Мелик-Карамова, д 4</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
+                        <deptAddress>628001, ХМАО-Югра, г. Ханты-Мансийск, ул. Свободы, д.2.</deptAddress>
+                        <deptPhone>+7 (3467) 33-82-76</deptPhone>
                         <deleted>false</deleted>
                         <positions>
                             <position>
                                 <code>47</code>
                                 <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-17</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
+                                <nearestDate>2019-06-14</nearestDate>
                             </position>
                         </positions>
                     </department>
+                </departments>
+            </ns2:specialist>
+            <ns2:specialist>
+                <muCode>21126</muCode>
+                <profCode>21126191309665</profCode>
+                <snils>10382525023</snils>
+                <lastName>Каррамова</lastName>
+                <firstName>Айгуль</firstName>
+                <middleName>Ильгизовна</middleName>
+                <departments>
                     <department>
-                        <deptCode>191232133</deptCode>
-                        <deptName>БУ СГКП №2 "ПЕДИАТРИЧЕСКОЕ ОТДЕЛЕНИЕ №10"</deptName>
+                        <deptCode>339756</deptCode>
+                        <deptName>Детская поликлиника. Участок №25</deptName>
                         <deptType>2</deptType>
-                        <deptAddress>628402, ХМАО-Югра, г Сургут, ул Калинина, д 25</deptAddress>
-                        <deptPhone>+7(3462)21-55-22</deptPhone>
+                        <deptAddress>628007, ХМАО-Югра, г. Ханты-Мансийск, ул.Строителей, д.104.</deptAddress>
+                        <deptPhone>+7 (3467) 92-62-84</deptPhone>
                         <deleted>false</deleted>
                         <positions>
                             <position>
                                 <code>47</code>
                                 <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-17</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
+                                <nearestDate>2019-06-13</nearestDate>
                             </position>
                         </positions>
                     </department>
                 </departments>
             </ns2:specialist>
             <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>14500511505</profCode>
-                <snils>14500511505</snils>
-                <lastName>Магомедова</lastName>
-                <firstName>Ренада</firstName>
-                <middleName>Джабировна</middleName>
+                <muCode>21126</muCode>
+                <profCode>21126208228530</profCode>
+                <snils>15579966843</snils>
+                <lastName>Калантарова</lastName>
+                <firstName>Заира</firstName>
+                <middleName>Олеговна</middleName>
                 <departments>
                     <department>
-                        <deptCode>191231528</deptCode>
-                        <deptName>ОТДЕЛЕНИЕ ПЛАТНЫХ УСЛУГ</deptName>
+                        <deptCode>53514</deptCode>
+                        <deptName>Детская поликлиника. Участок №7</deptName>
                         <deptType>2</deptType>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>42</code>
-                                <name>врач-оториноларинголог</name>
-                                <nearestDate>2019-04-29</nearestDate>
-                                <positionFrmrCode>53</positionFrmrCode>
-                            </position>
-                            <position>
-                                <code>40</code>
-                                <name>врач общей практики (семейный врач)</name>
-                                <nearestDate>2019-04-25</nearestDate>
-                                <positionFrmrCode>49</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>07165569382</profCode>
-                <snils>07165569382</snils>
-                <lastName>Тодокова</lastName>
-                <firstName>Евгения</firstName>
-                <middleName>Алексеевна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>19123193</deptCode>
-                        <deptName>БУ СГКП №2 "ПОЛИКЛИНИКА ДЛЯ ВЗРОСЛЫХ"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628405, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 10/1</deptAddress>
-                        <deptPhone>+7(3462)21-11-23</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>40</code>
-                                <name>врач общей практики (семейный врач)</name>
-                                <nearestDate>2019-04-25</nearestDate>
-                                <positionFrmrCode>49</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>12887973429</profCode>
-                <snils>12887973429</snils>
-                <lastName>Аксанова</lastName>
-                <firstName>Лилия</firstName>
-                <middleName>Раиловна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>19123193</deptCode>
-                        <deptName>БУ СГКП №2 "ПОЛИКЛИНИКА ДЛЯ ВЗРОСЛЫХ"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628405, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 10/1</deptAddress>
-                        <deptPhone>+7(3462)21-11-23</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>74</code>
-                                <name>врач-терапевт участковый</name>
-                                <nearestDate>2019-04-25</nearestDate>
-                                <positionFrmrCode>110</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>17320317632</profCode>
-                <snils>17320317632</snils>
-                <lastName>Яковлева</lastName>
-                <firstName>Людмила</firstName>
-                <middleName>Сергеевна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>19123180</deptCode>
-                        <deptName>БУ СГКП №2 "ДЕТСКАЯ ПОЛИКЛИНИКА"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628400, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 16</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
+                        <deptAddress>628011, ХМАО-Югра, г. Ханты-Мансийск, ул. Объездная, д.59</deptAddress>
+                        <deptPhone>+7 (3467) 92-84-39</deptPhone>
                         <deleted>false</deleted>
                         <positions>
                             <position>
                                 <code>47</code>
                                 <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-19</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
+                                <nearestDate>2019-06-11</nearestDate>
                             </position>
                         </positions>
                     </department>
                 </departments>
             </ns2:specialist>
             <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>12127397839</profCode>
-                <snils>12127397839</snils>
-                <lastName>Рамазанова</lastName>
-                <firstName>Залина</firstName>
-                <middleName>Емагазыевна</middleName>
+                <muCode>21126</muCode>
+                <profCode>21126903044</profCode>
+                <snils>02410346995</snils>
+                <lastName>Марласова</lastName>
+                <firstName>Ирина</firstName>
+                <middleName>Анатольевна</middleName>
                 <departments>
                     <department>
-                        <deptCode>19123193</deptCode>
-                        <deptName>БУ СГКП №2 "ПОЛИКЛИНИКА ДЛЯ ВЗРОСЛЫХ"</deptName>
+                        <deptCode>57829</deptCode>
+                        <deptName>Консультативное отделение № 1</deptName>
                         <deptType>2</deptType>
-                        <deptAddress>628405, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 10/1</deptAddress>
-                        <deptPhone>+7(3462)21-11-23</deptPhone>
+                        <deptAddress>628012, ХМАО-Югра, г. Ханты-Мансийск, ул.Калинина д.40</deptAddress>
+                        <deptPhone>+7 (3467) 390-095, 390-093, 304-147</deptPhone>
                         <deleted>false</deleted>
                         <positions>
                             <position>
-                                <code>74</code>
-                                <name>врач-терапевт участковый</name>
-                                <nearestDate>2019-04-25</nearestDate>
-                                <positionFrmrCode>110</positionFrmrCode>
+                                <code>52</code>
+                                <name>врач-психотерапевт</name>
+                                <nearestDate>2019-06-10</nearestDate>
                             </position>
                         </positions>
                     </department>
                 </departments>
             </ns2:specialist>
             <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>06913870084</profCode>
-                <snils>06913870084</snils>
-                <lastName>Култаева</lastName>
-                <firstName>Альфира</firstName>
-                <middleName>Явгайтаровна</middleName>
+                <muCode>21126</muCode>
+                <profCode>21126759690</profCode>
+                <snils>06682186794</snils>
+                <lastName>Гоголев</lastName>
+                <firstName>Владимир</firstName>
+                <middleName>Валерьевич</middleName>
                 <departments>
                     <department>
-                        <deptCode>191232133</deptCode>
-                        <deptName>БУ СГКП №2 "ПЕДИАТРИЧЕСКОЕ ОТДЕЛЕНИЕ №3"</deptName>
+                        <deptCode>57829</deptCode>
+                        <deptName>Консультативное отделение № 1</deptName>
                         <deptType>2</deptType>
-                        <deptAddress>628402, ХМАО-Югра, г Сургут, ул Мелик-Карамова, д 4</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
+                        <deptAddress>628012, ХМАО-Югра, г. Ханты-Мансийск, ул.Калинина д.40</deptAddress>
+                        <deptPhone>+7 (3467) 390-095, 390-093, 304-147</deptPhone>
                         <deleted>false</deleted>
                         <positions>
                             <position>
-                                <code>47</code>
-                                <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-17</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
+                                <code>20</code>
+                                <name>врач-дерматовенеролог</name>
+                                <nearestDate>2019-06-10</nearestDate>
                             </position>
                         </positions>
                     </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>18500725455</profCode>
-                <snils>18500725455</snils>
-                <lastName>Хомина</lastName>
-                <firstName>Алла</firstName>
-                <middleName>Юрьевна</middleName>
-                <departments>
                     <department>
-                        <deptCode>191232133</deptCode>
-                        <deptName>БУ СГКП №2 "ПЕДИАТРИЧЕСКОЕ ОТДЕЛЕНИЕ №3"</deptName>
+                        <deptCode>132364</deptCode>
+                        <deptName>Детская поликлиника</deptName>
                         <deptType>2</deptType>
-                        <deptAddress>628402, ХМАО-Югра, г Сургут, ул Мелик-Карамова, д 4</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
+                        <deptAddress>628012, ХМАО-Югра, г. Ханты-Мансийск, ул. Калинина, д. 40</deptAddress>
+                        <deptPhone>+7 (3467) 390-069, 332-450, 390-392</deptPhone>
                         <deleted>false</deleted>
                         <positions>
                             <position>
-                                <code>47</code>
-                                <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-17</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
+                                <code>20</code>
+                                <name>врач-дерматовенеролог</name>
+                                <nearestDate>2019-06-17</nearestDate>
                             </position>
                         </positions>
                     </department>
                 </departments>
             </ns2:specialist>
             <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>05950161359</profCode>
-                <snils>05950161359</snils>
-                <lastName>Патрушева</lastName>
+                <muCode>21126</muCode>
+                <profCode>21126874763</profCode>
+                <snils>06673156986</snils>
+                <lastName>Ернова</lastName>
                 <firstName>Елена</firstName>
                 <middleName>Ивановна</middleName>
                 <departments>
                     <department>
-                        <deptCode>19123180</deptCode>
-                        <deptName>БУ СГКП №2 "ДЕТСКАЯ ПОЛИКЛИНИКА"</deptName>
+                        <deptCode>53508</deptCode>
+                        <deptName>Детская поликлиника. Участок № 1</deptName>
                         <deptType>2</deptType>
-                        <deptAddress>628400, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 16</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
+                        <deptAddress>628007, ХМАО-Югра, г. Ханты-Мансийск, ул. Парковая, д.24.</deptAddress>
+                        <deptPhone>+7 (3467) 33-07-51</deptPhone>
                         <deleted>false</deleted>
                         <positions>
                             <position>
                                 <code>47</code>
                                 <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-17</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
+                                <nearestDate>2019-06-11</nearestDate>
                             </position>
                         </positions>
                     </department>
                 </departments>
             </ns2:specialist>
             <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>06331308524</profCode>
-                <snils>06331308524</snils>
-                <lastName>Кузнецова</lastName>
-                <firstName>Лариса</firstName>
-                <middleName>Андреевна</middleName>
+                <muCode>21126</muCode>
+                <profCode>2112674127718</profCode>
+                <snils>06775515096</snils>
+                <lastName>Башкиров</lastName>
+                <firstName>Михаил</firstName>
+                <middleName>Анатольевич</middleName>
                 <departments>
                     <department>
-                        <deptCode>19123180</deptCode>
-                        <deptName>БУ СГКП №2 "ДЕТСКАЯ ПОЛИКЛИНИКА"</deptName>
+                        <deptCode>53509</deptCode>
+                        <deptName>Детская поликлиника. Участок № 2</deptName>
                         <deptType>2</deptType>
-                        <deptAddress>628400, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 16</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
+                        <deptAddress>628012, ХМАО-Югра, г. Ханты-Мансийск, ул. Энгельса, д.25.</deptAddress>
+                        <deptPhone>+7 (3467) 32-45-49</deptPhone>
                         <deleted>false</deleted>
                         <positions>
                             <position>
                                 <code>47</code>
                                 <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-23</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
+                                <nearestDate>2019-06-13</nearestDate>
                             </position>
                         </positions>
                     </department>
                 </departments>
             </ns2:specialist>
             <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>15519707278</profCode>
-                <snils>15519707278</snils>
-                <lastName>Гимаева</lastName>
-                <firstName>Дарья</firstName>
-                <middleName>Сергеевна</middleName>
+                <muCode>21126</muCode>
+                <profCode>21126188084832</profCode>
+                <snils>17238729088</snils>
+                <lastName>Лаптева</lastName>
+                <firstName>Надежда</firstName>
+                <middleName>Михайловна</middleName>
                 <departments>
                     <department>
-                        <deptCode>19123180</deptCode>
-                        <deptName>БУ СГКП №2 "ДЕТСКАЯ ПОЛИКЛИНИКА"</deptName>
+                        <deptCode>843</deptCode>
+                        <deptName>Женская консультация</deptName>
                         <deptType>2</deptType>
-                        <deptAddress>628400, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 16</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
+                        <deptAddress>628012, ХМАО-Югра, г. Ханты-Мансийск, ул. Калинина д.40.</deptAddress>
+                        <deptPhone>+7 (3467) 331-750</deptPhone>
+                        <deleted>false</deleted>
+                        <positions>
+                            <position>
+                                <code>12</code>
+                                <name>врач-акушер-гинеколог</name>
+                                <nearestDate>2019-07-01</nearestDate>
+                            </position>
+                        </positions>
+                    </department>
+                </departments>
+            </ns2:specialist>
+            <ns2:specialist>
+                <muCode>21126</muCode>
+                <profCode>21126580899</profCode>
+                <snils>10686568082</snils>
+                <lastName>Овечкина</lastName>
+                <firstName>Наталия</firstName>
+                <middleName>Михайловна</middleName>
+                <departments>
+                    <department>
+                        <deptCode>132364</deptCode>
+                        <deptName>Детская поликлиника</deptName>
+                        <deptType>2</deptType>
+                        <deptAddress>628012, ХМАО-Югра, г. Ханты-Мансийск, ул. Калинина, д. 40</deptAddress>
+                        <deptPhone>+7 (3467) 390-069, 332-450, 390-392</deptPhone>
+                        <deleted>false</deleted>
+                        <positions>
+                            <position>
+                                <code>168</code>
+                                <name>медицинский психолог</name>
+                                <nearestDate>2019-06-13</nearestDate>
+                            </position>
+                        </positions>
+                    </department>
+                </departments>
+            </ns2:specialist>
+            <ns2:specialist>
+                <muCode>21126</muCode>
+                <profCode>2112649460904</profCode>
+                <snils>14092104016</snils>
+                <lastName>Пушкина</lastName>
+                <firstName>Татьяна</firstName>
+                <middleName>Валерьевна</middleName>
+                <departments>
+                    <department>
+                        <deptCode>132364</deptCode>
+                        <deptName>Детская поликлиника</deptName>
+                        <deptType>2</deptType>
+                        <deptAddress>628012, ХМАО-Югра, г. Ханты-Мансийск, ул. Калинина, д. 40</deptAddress>
+                        <deptPhone>+7 (3467) 390-069, 332-450, 390-392</deptPhone>
+                        <deleted>false</deleted>
+                        <positions>
+                            <position>
+                                <code>23</code>
+                                <name>врач - детский хирург</name>
+                                <nearestDate>2019-06-10</nearestDate>
+                            </position>
+                        </positions>
+                    </department>
+                </departments>
+            </ns2:specialist>
+            <ns2:specialist>
+                <muCode>21126</muCode>
+                <profCode>21126834954</profCode>
+                <snils>04721525033</snils>
+                <lastName>Фроловский</lastName>
+                <firstName>Александр</firstName>
+                <middleName>Анатольевич</middleName>
+                <departments>
+                    <department>
+                        <deptCode>843</deptCode>
+                        <deptName>Женская консультация</deptName>
+                        <deptType>2</deptType>
+                        <deptAddress>628012, ХМАО-Югра, г. Ханты-Мансийск, ул. Калинина д.40.</deptAddress>
+                        <deptPhone>+7 (3467) 331-750</deptPhone>
+                        <deleted>false</deleted>
+                        <positions>
+                            <position>
+                                <code>12</code>
+                                <name>врач-акушер-гинеколог</name>
+                                <nearestDate>2019-06-10</nearestDate>
+                            </position>
+                        </positions>
+                    </department>
+                </departments>
+            </ns2:specialist>
+            <ns2:specialist>
+                <muCode>21126</muCode>
+                <profCode>2112672692567</profCode>
+                <snils>06548964209</snils>
+                <lastName>Чикунов</lastName>
+                <firstName>Артём</firstName>
+                <middleName>Анатольевич</middleName>
+                <departments>
+                    <department>
+                        <deptCode>54490</deptCode>
+                        <deptName>Хирургическое отделение КДП</deptName>
+                        <deptType>2</deptType>
+                        <deptAddress>628012, ХМАО-Югра, г. Ханты-Мансийск, ул.Калинина д.40</deptAddress>
+                        <deptPhone>+7 (3467) 390-095, 390-093, 304-147</deptPhone>
+                        <deleted>false</deleted>
+                        <positions>
+                            <position>
+                                <code>201</code>
+                                <name>врач - челюстно-лицевой хирург</name>
+                                <nearestDate>2019-06-10</nearestDate>
+                            </position>
+                        </positions>
+                    </department>
+                </departments>
+            </ns2:specialist>
+            <ns2:specialist>
+                <muCode>21126</muCode>
+                <profCode>21126833803</profCode>
+                <snils>12434776455</snils>
+                <lastName>Ёлчуева</lastName>
+                <firstName>Гамза</firstName>
+                <middleName>Хагани Кызы</middleName>
+                <departments>
+                    <department>
+                        <deptCode>843</deptCode>
+                        <deptName>Женская консультация</deptName>
+                        <deptType>2</deptType>
+                        <deptAddress>628012, ХМАО-Югра, г. Ханты-Мансийск, ул. Калинина д.40.</deptAddress>
+                        <deptPhone>+7 (3467) 331-750</deptPhone>
+                        <deleted>false</deleted>
+                        <positions>
+                            <position>
+                                <code>12</code>
+                                <name>врач-акушер-гинеколог</name>
+                                <nearestDate>2019-06-10</nearestDate>
+                            </position>
+                        </positions>
+                    </department>
+                </departments>
+            </ns2:specialist>
+            <ns2:specialist>
+                <muCode>21126</muCode>
+                <profCode>2112653475045</profCode>
+                <snils>07527820479</snils>
+                <lastName>Гелеван</lastName>
+                <firstName>Наталья</firstName>
+                <middleName>Юрьевна</middleName>
+                <departments>
+                    <department>
+                        <deptCode>53524</deptCode>
+                        <deptName>Детская поликлиника. Участок №17</deptName>
+                        <deptType>2</deptType>
+                        <deptAddress>628012, ХМАО-Югра, г. Ханты-Мансийск, ул. Энгельса, д.25.</deptAddress>
+                        <deptPhone>+7 (3467) 32-45-49</deptPhone>
                         <deleted>false</deleted>
                         <positions>
                             <position>
                                 <code>47</code>
                                 <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-18</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
+                                <nearestDate>2019-06-14</nearestDate>
                             </position>
                         </positions>
                     </department>
                 </departments>
             </ns2:specialist>
             <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>19500254248</profCode>
-                <snils>19500254248</snils>
-                <lastName>Хайбулаева</lastName>
-                <firstName>Патимат</firstName>
-                <middleName>Магомедзаидовна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>19123193</deptCode>
-                        <deptName>БУ СГКП №2 "ПОЛИКЛИНИКА ДЛЯ ВЗРОСЛЫХ"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628405, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 10/1</deptAddress>
-                        <deptPhone>+7(3462)21-11-23</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>74</code>
-                                <name>врач-терапевт участковый</name>
-                                <nearestDate>2019-04-22</nearestDate>
-                                <positionFrmrCode>110</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>13948813908</profCode>
-                <snils>13948813908</snils>
-                <lastName>Магомедова</lastName>
-                <firstName>Зубайдат</firstName>
-                <middleName>Руслановна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>191232133</deptCode>
-                        <deptName>БУ СГКП №2 "ПЕДИАТРИЧЕСКОЕ ОТДЕЛЕНИЕ №3"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628402, ХМАО-Югра, г Сургут, ул Мелик-Карамова, д 4</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>47</code>
-                                <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-18</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>07334764169</profCode>
-                <snils>07334764169</snils>
-                <lastName>Чирятьева</lastName>
-                <firstName>Ирина</firstName>
-                <middleName>Леонидовна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>19123180</deptCode>
-                        <deptName>БУ СГКП №2 "ДЕТСКАЯ ПОЛИКЛИНИКА"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628400, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 16</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>47</code>
-                                <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-18</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>12784310157</profCode>
-                <snils>12784310157</snils>
-                <lastName>Дектерева</lastName>
-                <firstName>Елена</firstName>
-                <middleName>Евгеньевна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>19123180</deptCode>
-                        <deptName>БУ СГКП №2 "ДЕТСКАЯ ПОЛИКЛИНИКА"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628400, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 16</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>47</code>
-                                <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-17</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>13865024366</profCode>
-                <snils>13865024366</snils>
-                <lastName>Романов</lastName>
+                <muCode>21126</muCode>
+                <profCode>2112653514798</profCode>
+                <snils>10241865718</snils>
+                <lastName>Иванко</lastName>
                 <firstName>Максим</firstName>
-                <middleName>Альбертович</middleName>
+                <middleName>Александрович</middleName>
                 <departments>
                     <department>
-                        <deptCode>19123180</deptCode>
-                        <deptName>БУ СГКП №2 "ДЕТСКАЯ ПОЛИКЛИНИКА"</deptName>
+                        <deptCode>843</deptCode>
+                        <deptName>Женская консультация</deptName>
                         <deptType>2</deptType>
-                        <deptAddress>628400, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 16</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
+                        <deptAddress>628012, ХМАО-Югра, г. Ханты-Мансийск, ул. Калинина д.40.</deptAddress>
+                        <deptPhone>+7 (3467) 331-750</deptPhone>
+                        <deleted>false</deleted>
+                        <positions>
+                            <position>
+                                <code>12</code>
+                                <name>врач-акушер-гинеколог</name>
+                                <nearestDate>2019-06-10</nearestDate>
+                            </position>
+                        </positions>
+                    </department>
+                </departments>
+            </ns2:specialist>
+            <ns2:specialist>
+                <muCode>21126</muCode>
+                <profCode>2112690296642</profCode>
+                <snils>12071433507</snils>
+                <lastName>Щербакова</lastName>
+                <firstName>Анастасия</firstName>
+                <middleName>Григорьевна</middleName>
+                <departments>
+                    <department>
+                        <deptCode>132364</deptCode>
+                        <deptName>Детская поликлиника</deptName>
+                        <deptType>2</deptType>
+                        <deptAddress>628012, ХМАО-Югра, г. Ханты-Мансийск, ул. Калинина, д. 40</deptAddress>
+                        <deptPhone>+7 (3467) 390-069, 332-450, 390-392</deptPhone>
+                        <deleted>false</deleted>
+                        <positions>
+                            <position>
+                                <code>16</code>
+                                <name>врач-гастроэнтеролог</name>
+                                <nearestDate>2019-06-21</nearestDate>
+                            </position>
+                        </positions>
+                    </department>
+                </departments>
+            </ns2:specialist>
+            <ns2:specialist>
+                <muCode>21126</muCode>
+                <profCode>21126786015</profCode>
+                <snils>05168791382</snils>
+                <lastName>Чепанов</lastName>
+                <firstName>Владимир</firstName>
+                <middleName>Иванович</middleName>
+                <departments>
+                    <department>
+                        <deptCode>132364</deptCode>
+                        <deptName>Детская поликлиника</deptName>
+                        <deptType>2</deptType>
+                        <deptAddress>628012, ХМАО-Югра, г. Ханты-Мансийск, ул. Калинина, д. 40</deptAddress>
+                        <deptPhone>+7 (3467) 390-069, 332-450, 390-392</deptPhone>
+                        <deleted>false</deleted>
+                        <positions>
+                            <position>
+                                <code>34</code>
+                                <name>врач по спортивной медицине</name>
+                                <nearestDate>2019-06-10</nearestDate>
+                            </position>
+                        </positions>
+                    </department>
+                </departments>
+            </ns2:specialist>
+            <ns2:specialist>
+                <muCode>21126</muCode>
+                <profCode>2112675878216</profCode>
+                <snils>13266957178</snils>
+                <lastName>Беликова</lastName>
+                <firstName>Александра</firstName>
+                <middleName>Юрьевна</middleName>
+                <departments>
+                    <department>
+                        <deptCode>53516</deptCode>
+                        <deptName>Детская поликлиника. Участок №9</deptName>
+                        <deptType>2</deptType>
+                        <deptAddress>628007, ХМАО-Югра, г. Ханты-Мансийск, ул.Строителей, д.104.</deptAddress>
+                        <deptPhone>+7 (3467) 92-62-84</deptPhone>
                         <deleted>false</deleted>
                         <positions>
                             <position>
                                 <code>47</code>
                                 <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-17</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
+                                <nearestDate>2019-06-14</nearestDate>
                             </position>
                         </positions>
                     </department>
                 </departments>
             </ns2:specialist>
             <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>17332059854</profCode>
-                <snils>17332059854</snils>
-                <lastName>Янбаева</lastName>
-                <firstName>Зифа</firstName>
-                <middleName>Халиловна</middleName>
+                <muCode>21126</muCode>
+                <profCode>21126224604699</profCode>
+                <snils>15360126734</snils>
+                <lastName>Худайбердина</lastName>
+                <firstName>Аниса</firstName>
+                <middleName>Рамилевна</middleName>
                 <departments>
                     <department>
-                        <deptCode>19123180</deptCode>
-                        <deptName>БУ СГКП №2 "ДЕТСКАЯ ПОЛИКЛИНИКА"</deptName>
+                        <deptCode>53512</deptCode>
+                        <deptName>Детская поликлиника. Участок №5</deptName>
                         <deptType>2</deptType>
-                        <deptAddress>628400, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 16</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
+                        <deptAddress>628001, ХМАО-Югра, г. Ханты-Мансийск, ул. Свободы, д.2.</deptAddress>
+                        <deptPhone>+7 (3467) 33-82-76</deptPhone>
                         <deleted>false</deleted>
                         <positions>
                             <position>
                                 <code>47</code>
                                 <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-22</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
+                                <nearestDate>2019-06-13</nearestDate>
                             </position>
                         </positions>
                     </department>
                 </departments>
             </ns2:specialist>
             <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>15046427745</profCode>
-                <snils>15046427745</snils>
-                <lastName>Имангулиева</lastName>
-                <firstName>Рейхана</firstName>
-                <middleName>Амирхановна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>19123180</deptCode>
-                        <deptName>БУ СГКП №2 "ДЕТСКАЯ ПОЛИКЛИНИКА"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628400, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 16</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>47</code>
-                                <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-18</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>19410701751</profCode>
-                <snils>19410701751</snils>
-                <lastName>Тургунов</lastName>
-                <firstName>Дилшоджон</firstName>
-                <middleName>Фахридинович</middleName>
-                <departments>
-                    <department>
-                        <deptCode>19123193</deptCode>
-                        <deptName>БУ СГКП №2 "ПОЛИКЛИНИКА ДЛЯ ВЗРОСЛЫХ"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628405, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 10/1</deptAddress>
-                        <deptPhone>+7(3462)21-11-23</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>74</code>
-                                <name>врач-терапевт участковый</name>
-                                <nearestDate>2019-04-23</nearestDate>
-                                <positionFrmrCode>110</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>17397664124</profCode>
-                <snils>17397664124</snils>
-                <lastName>Султанаева</lastName>
-                <firstName>Айгуль</firstName>
-                <middleName>Рафаковна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>19123193</deptCode>
-                        <deptName>БУ СГКП №2 "ПОЛИКЛИНИКА ДЛЯ ВЗРОСЛЫХ"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628405, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 10/1</deptAddress>
-                        <deptPhone>+7(3462)21-11-23</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>40</code>
-                                <name>врач общей практики (семейный врач)</name>
-                                <nearestDate>2019-04-24</nearestDate>
-                                <positionFrmrCode>49</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>16229717981</profCode>
-                <snils>16229717981</snils>
-                <lastName>Насибуллина</lastName>
-                <firstName>Юлия</firstName>
-                <middleName>Рашитовна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>191232133</deptCode>
-                        <deptName>БУ СГКП №2 "ПЕДИАТРИЧЕСКОЕ ОТДЕЛЕНИЕ №3"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628402, ХМАО-Югра, г Сургут, ул Мелик-Карамова, д 4</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>47</code>
-                                <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-22</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                    <department>
-                        <deptCode>19123193</deptCode>
-                        <deptName>БУ СГКП №2 "ПОЛИКЛИНИКА ДЛЯ ВЗРОСЛЫХ"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628405, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 10/1</deptAddress>
-                        <deptPhone>+7(3462)21-11-23</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>47</code>
-                                <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-22</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
-                            </position>
-                            <position>
-                                <code>40</code>
-                                <name>врач общей практики (семейный врач)</name>
-                                <nearestDate>2019-04-24</nearestDate>
-                                <positionFrmrCode>49</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>05701361126</profCode>
-                <snils>05701361126</snils>
-                <lastName>Сокур</lastName>
-                <firstName>Светлана</firstName>
-                <middleName>Алексеевна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>19123180</deptCode>
-                        <deptName>БУ СГКП №2 "ДЕТСКАЯ ПОЛИКЛИНИКА"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628400, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 16</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>47</code>
-                                <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-18</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>11257394951</profCode>
-                <snils>11257394951</snils>
-                <lastName>Товмасян</lastName>
-                <firstName>Рипсиме</firstName>
-                <middleName>Тиграновна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>19123193</deptCode>
-                        <deptName>БУ СГКП №2 "ПОЛИКЛИНИКА ДЛЯ ВЗРОСЛЫХ"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628405, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 10/1</deptAddress>
-                        <deptPhone>+7(3462)21-11-23</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>39</code>
-                                <name>врач-нефролог</name>
-                                <nearestDate>2019-04-22</nearestDate>
-                                <positionFrmrCode>48</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>15681726695</profCode>
-                <snils>15681726695</snils>
-                <lastName>Евтюкова</lastName>
+                <muCode>21126</muCode>
+                <profCode>21126189858731</profCode>
+                <snils>06335881271</snils>
+                <lastName>Шаламова</lastName>
                 <firstName>Елена</firstName>
-                <middleName>Александровна</middleName>
+                <middleName>Викторовна</middleName>
                 <departments>
                     <department>
-                        <deptCode>19123180</deptCode>
-                        <deptName>БУ СГКП №2 "ДЕТСКАЯ ПОЛИКЛИНИКА"</deptName>
+                        <deptCode>132364</deptCode>
+                        <deptName>Детская поликлиника</deptName>
                         <deptType>2</deptType>
-                        <deptAddress>628400, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 16</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
+                        <deptAddress>628012, ХМАО-Югра, г. Ханты-Мансийск, ул. Калинина, д. 40</deptAddress>
+                        <deptPhone>+7 (3467) 390-069, 332-450, 390-392</deptPhone>
+                        <deleted>false</deleted>
+                        <positions>
+                            <position>
+                                <code>28</code>
+                                <name>врач-инфекционист</name>
+                                <nearestDate>2019-06-10</nearestDate>
+                            </position>
+                        </positions>
+                    </department>
+                </departments>
+            </ns2:specialist>
+            <ns2:specialist>
+                <muCode>21126</muCode>
+                <profCode>2112651613459</profCode>
+                <snils>14686475006</snils>
+                <lastName>Абышева</lastName>
+                <firstName>Гулайра</firstName>
+                <middleName>Абдыбековна</middleName>
+                <departments>
+                    <department>
+                        <deptCode>331672</deptCode>
+                        <deptName>Детская поликлиника. Участок №20</deptName>
+                        <deptType>2</deptType>
+                        <deptAddress>628013, ХМАО-Югра, г. Ханты-Мансийск, ул. Осенняя, д.1</deptAddress>
+                        <deptPhone>+7 (3467) 390-069, 332-450, 390-392</deptPhone>
                         <deleted>false</deleted>
                         <positions>
                             <position>
                                 <code>47</code>
                                 <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-26</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
+                                <nearestDate>2019-06-14</nearestDate>
                             </position>
                         </positions>
                     </department>
                 </departments>
             </ns2:specialist>
             <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>15248342458</profCode>
-                <snils>15248342458</snils>
-                <lastName>Шугаипова</lastName>
-                <firstName>Айнара</firstName>
-                <middleName>Тагировна</middleName>
+                <muCode>21126</muCode>
+                <profCode>21126190680325</profCode>
+                <snils>06454407964</snils>
+                <lastName>Жбанов</lastName>
+                <firstName>Виталий</firstName>
+                <middleName>Владимирович</middleName>
                 <departments>
                     <department>
-                        <deptCode>19123180</deptCode>
-                        <deptName>БУ СГКП №2 "ДЕТСКАЯ ПОЛИКЛИНИКА"</deptName>
+                        <deptCode>339487</deptCode>
+                        <deptName>Детская поликлиника. Участок №23</deptName>
                         <deptType>2</deptType>
-                        <deptAddress>628400, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 16</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
+                        <deptAddress>628007, ХМАО-Югра, г. Ханты-Мансийск, ул. Парковая, д.24.</deptAddress>
+                        <deptPhone>+7 (3467) 33-07-51</deptPhone>
                         <deleted>false</deleted>
                         <positions>
                             <position>
                                 <code>47</code>
                                 <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-22</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
-                            </position>
-                            <position>
-                                <code>74</code>
-                                <name>врач-терапевт участковый</name>
-                                <nearestDate>2019-04-23</nearestDate>
-                                <positionFrmrCode>110</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>12809536369</profCode>
-                <snils>12809536369</snils>
-                <lastName>Понарина</lastName>
-                <firstName>Дарина</firstName>
-                <middleName>Анатольевна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>19123180</deptCode>
-                        <deptName>БУ СГКП №2 "ДЕТСКАЯ ПОЛИКЛИНИКА"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628400, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 16</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>47</code>
-                                <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-18</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>15188021051</profCode>
-                <snils>15188021051</snils>
-                <lastName>Гумматов</lastName>
-                <firstName>Амиль</firstName>
-                <middleName>Фазаиль Оглы</middleName>
-                <departments>
-                    <department>
-                        <deptCode>191231528</deptCode>
-                        <deptName>ОТДЕЛЕНИЕ ПЛАТНЫХ УСЛУГ</deptName>
-                        <deptType>2</deptType>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>91</code>
-                                <name>врач-хирург</name>
-                                <nearestDate>2019-04-18</nearestDate>
-                                <positionFrmrCode>122</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>14963993022</profCode>
-                <snils>14963993022</snils>
-                <lastName>Куванова</lastName>
-                <firstName>Кызару</firstName>
-                <middleName>Отегеновна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>191232133</deptCode>
-                        <deptName>БУ СГКП №2 "ПЕДИАТРИЧЕСКОЕ ОТДЕЛЕНИЕ №3"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628402, ХМАО-Югра, г Сургут, ул Мелик-Карамова, д 4</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>47</code>
-                                <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-16</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>14876990939</profCode>
-                <snils>14876990939</snils>
-                <lastName>Шагалиева</lastName>
-                <firstName>Эльвина</firstName>
-                <middleName>Ришатовна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>19123180</deptCode>
-                        <deptName>БУ СГКП №2 "ДЕТСКАЯ ПОЛИКЛИНИКА"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628400, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 16</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>47</code>
-                                <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-18</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>05115080102</profCode>
-                <snils>05115080102</snils>
-                <lastName>Пискунова</lastName>
-                <firstName>Нина</firstName>
-                <middleName>Петровна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>19123180</deptCode>
-                        <deptName>БУ СГКП №2 "ДЕТСКАЯ ПОЛИКЛИНИКА"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628400, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 16</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>47</code>
-                                <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-18</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>17928992853</profCode>
-                <snils>17928992853</snils>
-                <lastName>Аслонова</lastName>
-                <firstName>Садокат</firstName>
-                <middleName>Мирузбековна</middleName>
-                <departments>
-                    <department>
-                        <deptCode>19123193</deptCode>
-                        <deptName>БУ СГКП №2 "ПОЛИКЛИНИКА ДЛЯ ВЗРОСЛЫХ"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628405, ХМАО-Югра, г Сургут, Комсомольский пр-кт, д 10/1</deptAddress>
-                        <deptPhone>+7(3462)21-11-23</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>74</code>
-                                <name>врач-терапевт участковый</name>
-                                <nearestDate>2019-04-24</nearestDate>
-                                <positionFrmrCode>110</positionFrmrCode>
-                            </position>
-                        </positions>
-                    </department>
-                </departments>
-            </ns2:specialist>
-            <ns2:specialist>
-                <muCode>19123</muCode>
-                <profCode>06958571224</profCode>
-                <snils>06958571224</snils>
-                <lastName>Шихмагомедов</lastName>
-                <firstName>Шихмагомед</firstName>
-                <middleName>Керимович</middleName>
-                <departments>
-                    <department>
-                        <deptCode>191232133</deptCode>
-                        <deptName>БУ СГКП №2 "ПЕДИАТРИЧЕСКОЕ ОТДЕЛЕНИЕ №3"</deptName>
-                        <deptType>2</deptType>
-                        <deptAddress>628402, ХМАО-Югра, г Сургут, ул Мелик-Карамова, д 4</deptAddress>
-                        <deptPhone>+7(3462)21-11-42</deptPhone>
-                        <deleted>false</deleted>
-                        <positions>
-                            <position>
-                                <code>47</code>
-                                <name>врач-педиатр участковый</name>
-                                <nearestDate>2019-04-17</nearestDate>
-                                <positionFrmrCode>59</positionFrmrCode>
+                                <nearestDate>2019-06-14</nearestDate>
                             </position>
                         </positions>
                     </department>

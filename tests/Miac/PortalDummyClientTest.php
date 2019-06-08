@@ -62,17 +62,21 @@ class PortalDummyClientTest extends BaseTestCase
     {
         $params = new Params([
             'sessionHandlerParams' => [
+                'wsdl' => "http://5.141.28.40:44555/PortalService/services/portal?wsdl",
                 'stateful' => true,
-                'dummy' => true
+                'soapClientOptions' => [
+                    'proxy_host' => "5.141.28.40",
+                    'proxy_port' => "44555"
+                ]
             ],
             'requestCreatorParams' => []
         ]);
         $client = new PortalClient($params);
 
         $result = $client->findDistrict(new FindDistrictOptions([
-            'kladrCode' => '8600001000000',
-            'street' => 'УЛ. ИВАНА ЗАХАРОВА',
-            'houseNumer' => '23'
+            'kladrCode' => '8600000100000',
+            'street' => 'Дунина-Горкавича',
+            'houseNumer' => '15'
         ]));
 
         $this->assertEquals(Result::STATUS_OK, $result->status);
