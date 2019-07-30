@@ -70,6 +70,30 @@ $params = new Params([
 ]);
 
   ``` 
+
+## Настройка подключения через прокси сервер
+
+```php
+<?php
+
+use Miac\Client\Params;
+use Miac\Client\Result;
+
+//Настройка клиента для тестирование без запросов на сервер:
+
+$params = new Params([
+            'sessionHandlerParams' => [
+                'wsdl' => "",
+                'stateful' => true,
+                'soapClientOptions' => [
+                    'proxy_host' => "127.0.0.1",
+                    'proxy_port' => "44555"
+                ]
+            ],
+            'requestCreatorParams' => []
+        ]);
+
+  ``` 
   
 ## Поддерживаемые сообщения
 
